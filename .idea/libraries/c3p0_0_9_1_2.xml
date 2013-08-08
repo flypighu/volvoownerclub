@@ -1,0 +1,31 @@
+<component name="libraryTable">
+  <library name="c3p0-0.9.1.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/commons-beanutils-1.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-collections-3.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-lang-2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ezmorph-1.0.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/freemarker-2.3.16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jetty-server-8.1.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/JFinal-bin-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/json-lib-2.4-jdk15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-1.2.16.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/org.springframework.asm-3.1.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/org.springframework.beans-3.1.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/org.springframework.context-3.1.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/org.springframework.core-3.1.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/org.springframework.expression-3.1.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/org.springframework.org.apache.commons.logging-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-web-3.1.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-context-support-3.1.1.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/activation-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mail-1.4.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cos-26Dec2008.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/c3p0-0.9.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mchange-commons-java-0.2.3.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mysql-connector-java-5.1.20-bin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

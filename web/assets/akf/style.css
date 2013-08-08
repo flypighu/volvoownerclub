@@ -1,0 +1,732 @@
+body,table,input,textarea,select,button {font-family:Microsoft YaHei,Verdana,sans-serif,SimSun;}
+
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.page-header {
+    margin: 5px 5px 10px;
+    padding-bottom: 0px;
+}
+
+.dot {
+    height: 5px;
+    margin-top: 5px;
+}
+
+.VVnews ul li {
+    line-height: 22px;
+    overflow: hidden;
+}
+
+.VVnews ul li .date{
+    color: #666666;
+    font-size: 8pt;
+}
+
+.VVnews ul li.today a{
+    background: url("../img/icons2.gif") no-repeat scroll 0 -234px transparent;
+    padding-left: 12px;
+}
+
+.VVnews ul li.other a{
+    background: url("../img/icons2.gif") no-repeat scroll 0 -284px transparent;
+    padding-left: 12px;
+    color: #3E62A6;
+    outline: 0 none;
+}
+
+.hotnews ul li {
+    line-height: 22px;
+    overflow: hidden;
+}
+
+.hotnews ul li .date{
+    color: #666666;
+    font-size: 8pt;
+    margin-left: 20px;
+}
+
+.hotnews ul li .stat{
+    color: #666666;
+}
+
+.hotnews ul li .stat em{
+    color: #AA0000;
+    font-style: normal;
+    margin: 0 2px;
+}
+
+.newsList {
+    margin: 20px 10px;
+}
+
+.newsList li {
+    border-bottom: 1px solid #EEEEEE;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.newsList li h2 {
+    margin: 0 0 5px;
+}
+
+
+.newsList li .date {
+    color: #666666;
+}
+
+
+.newsList li .detail {
+    color: #666666;
+    line-height: 20px;
+    margin: 10px 0;
+}
+
+.newsList li .newsImg {
+    margin: 0 0 10px;
+}
+
+.newsList li .newsImg img {
+    border: 1px solid #FFFFFF;
+    max-width: 600px;
+}
+
+.newsList a {
+    text-decoration: none;
+    color: #3E62A6;
+    outline: 0 none;
+}
+
+.newsReplies ul {
+    margin: 10px 0 0 5px;
+}
+
+.newsReplies ul li {
+    border-bottom: 1px dashed #CCCCCC;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.newsReplies ul li .content {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.newsReplies ul li .outline {
+    color: #888888;
+}
+
+.newsReplies a {
+    text-decoration: none;
+}
+
+.leftAd{
+    height: 50px;
+    margin-top: 10px;
+    border: solid 1px;
+}
+
+.discuss .table{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.discuss .table td{
+    white-space: nowrap;
+    border-bottom: 1px dashed #CCCCCC;
+}
+
+.discuss .table td.thread a{
+    height: 18px;
+    line-height: 18px;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.discuss .table td.thread a.top{
+    color: #AA0000;
+    font-weight: bold;
+}
+
+.discuss .table td.thread span.stat{
+    color: #888888;
+    font-size: 9pt;
+    margin-left: 10px;
+}
+
+.discuss .table td.lastpost{
+    color: #888888;
+    font-size: 9pt;
+    text-align: right;
+}
+
+.hotuser .table td{
+    text-align: center;
+    border: 0;
+}
+
+.hotuser .table td img{
+    height: 60px;
+    width: 60px;
+}
+
+.TopTweets {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.TopTweets li{
+    border-bottom: 1px dashed #DDDDDD;
+    margin: 0 0 5px;
+    padding: 0 0 8px;
+}
+
+.TopTweets li .portrait{
+    float: left;
+    padding-top: 3px;
+    width: 45px;
+}
+
+.TopTweets li .portrait img{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    height: 32px;
+    padding: 1px;
+    width: 32px;
+}
+
+.TopTweets li .body{
+    float: left;
+    font-size: 9pt;
+    overflow: hidden;
+    width: 320px;
+}
+
+.TopTweets li .user a {
+    color: #6CABE1;
+}
+
+.TopTweets li .log {
+    color: #666666;
+    word-break: break-all;
+}
+
+.TopTweets li .time {
+    color: #9A9A9A;
+    display: block;
+    margin: 5px 0 0;
+}
+
+.TopTweets li .time a {
+    color: #9A9A9A;
+    text-decoration: none;
+}
+
+.QuestionList .nav {
+    margin-bottom: 0;
+}
+
+.QuestionList ul li.question {
+    border-bottom: 1px dashed #CCCCCC;
+    margin: 0 0 5px;
+    padding: 0 0 10px;
+}
+
+.QuestionList ul li.question a.user {
+    float: left;
+    width: 50px;
+}
+
+.QuestionList ul li.question a.user img {
+    height: 36px;
+    width: 36px;
+}
+
+.QuestionList ul li.question .qbody {
+    float: left;
+    width: 550px;
+}
+
+.QuestionList ul li.question h4 {
+    margin-top: 0;
+}
+
+.QuestionList ul li.question h4 a {
+    text-decoration: none;
+    outline: 0 none;
+}
+
+.QuestionList ul li.question .Tags {
+    margin: 10px 0 0;
+}
+
+.QuestionList ul li.question .Date {
+    color: #888888;
+    font-size: 8pt;
+    margin: 5px 0 0;
+}
+
+.QuestionList ul li.question .qstat {
+    float: right;
+    text-align: right;
+    width: 140px;
+}
+
+.QuestionList ul li.question .qstat ul li {
+    float: right;
+    font-size: 9pt;
+    margin-left: 3px;
+    padding: 0 0 3px;
+    text-align: center;
+    width: 42px;
+}
+
+.QuestionList ul li.question .qstat ul li em {
+    display: block;
+    font-family: Verdana;
+    font-size: 12pt;
+    font-style: normal;
+    font-weight: bold;
+    padding: 3px 0;
+}
+
+.hottag a{
+    margin: 2px 2px 2px 0;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.SmallPortrait {
+    opacity: 0.9;
+}
+
+.clear {
+    clear: both;
+    font-size: 1px;
+    line-height: 0;
+}
+
+.thread_type_1 {
+    background: url("../img/thread_1.gif") no-repeat scroll left center transparent;
+}
+.thread_type_2 {
+    background: url("../img/thread_2.gif") no-repeat scroll left center transparent;
+}
+
+.reg {
+    border: 1px solid #DDDDDD;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* Footer
+-------------------------------------------------- */
+
+#footer {
+    margin-bottom: 20px;
+}
+
+#footer .links a {
+    color: #666666;
+    margin-right: 10px;
+}
+
+#footer .about {
+    margin-top: 20px;
+}
+
+#footer .about a{
+     margin-right: 20px;
+}
+
+#footer .about span{
+    line-height: 30px;
+}
+
+#scrollUp {
+    bottom: 20px;
+    right: 20px;
+    height: 38px;  /* Height of image */
+    width: 38px; /* Width of image */
+    background: url("../img/top.png") no-repeat;
+}
+
+/* 用户中心
+-------------------------------------------------- */
+.member .owner {
+    padding: 15px 5px 15px 10px;
+}
+
+.member .owner a {
+    text-decoration: none;
+}
+
+.member .owner .Img img {
+    float: left;
+    height: 56px;
+    width: 56px;
+    margin: 0 20px 10px 0;
+    padding: 3px;
+}
+
+.member .owner span.U .Name {
+    color: #FFFFFF;
+    display: block;
+    font-size: 14pt;
+    font-weight: bold;
+    margin: 0 0 12px;
+    word-wrap: break-word;
+}
+
+.member .owner span.U .opts {
+    color: #FFFFFF;
+    font-size: 9pt;
+}
+
+.member .owner span.U .opts a {
+    color: #FFFFFF;
+}
+
+.member .owner .stat {
+    color: #FFFFFF;
+    font-size: 9pt;
+}
+
+.member .owner .stat a {
+    margin-right: 3px;
+    color: #FFFFFF;
+    padding: 0;
+}
+
+.member .Resume {
+    background: url("../img/resume24.png") no-repeat scroll left bottom #7798CB;
+    color: #FFFFFF;
+    margin: 3px 0 0;
+    overflow: hidden;
+    padding: 18px 10px 18px 40px;
+    word-wrap: break-word;
+}
+
+.member .Opts {
+    margin: 3px 0 0;
+}
+
+.member .Opts a.a1 {
+    background-color: #9954BB;
+}
+
+.member .Opts a {
+    cursor: pointer;
+    float: left;
+    height: 108px;
+    width: 133px;
+    color: #4466BB;
+    outline: 0 none;
+}
+
+.member .Opts a.a2 {
+    margin-left: 4px;
+    background-color: #9954BB;
+}
+
+.member .Opts a.blog i {
+    background-position: 0 -67px;
+}
+
+
+.member .Opts a.admin i {
+    background-position: 0 -201px;
+}
+
+.member .Opts a i {
+    background-image: url("../img/space-opts.png");
+    display: block;
+    height: 67px;
+    margin: 10px 0 0 30px;
+    text-indent: -9999px;
+    width: 67px;
+}
+
+.member .Opts a span {
+    color: #FFFFFF;
+    font-size: 11pt;
+    padding: 82px 0 0 20px;
+}
+
+.member .Mod {
+    background-color: #DFDFDF;
+    color: #666666;
+    margin: 3px 0 0;
+    overflow: hidden;
+    padding: 5px 0;
+}
+
+.member .Mod ul, .Mod ol {
+    line-height: 24px;
+    margin: 10px;
+    list-style-type: none;
+    padding-left: 8px;
+}
+
+.member .Users ul li {
+    float: left;
+}
+
+.member .Users ul li a {
+    margin: 1px 1px 0 0;
+    color: #4466BB;
+    outline: 0 none;
+}
+
+.member .Users ul li img {
+    border: 1px solid #EAEAEA;
+    height: 36px;
+    width: 36px;
+}
+
+.member .Users .more {
+    margin: 15px 0;
+    padding: 0 5px 0 0;
+    text-align: right;
+}
+
+#MyTweetForm {
+    border: 1px solid #EEEEEE;
+    padding: 10px 15px;
+}
+
+#TFormTitle {
+    color: #888888;
+    position: relative;
+}
+
+#TFormTitle .r {
+    float: right;
+    font-size: 9pt;
+    margin: 0 10px 0 0;
+}
+
+#TFormTitle .r em {
+    color: #AA0000;
+    font-size: 10.5pt;
+    font-style: normal;
+    font-weight: bold;
+    margin: 0 3px 0 0;
+}
+
+#TForm {
+    margin-bottom: 0;
+}
+
+#TForm #TFormEditor {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #9954BB;
+    margin: 2px 0 0;
+    padding: 2px;
+}
+
+#TForm textarea {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 0 none;
+    font-size: 10pt;
+    height: 80px;
+    overflow: auto;
+    padding: 5px;
+    width: 98%;
+    resize: none;
+    margin-bottom: 0;
+}
+
+#TFormOpts {
+    margin: 0 0 0 5px;
+}
+
+#TFormOpts .B {
+    background: none repeat scroll 0 0 #9954BB;
+    border: 0 none;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    font-size: 12pt;
+    margin-right: 10px;
+    padding: 3px 20px 5px;
+}
+
+#Logs {
+    margin: 10px 0 0;
+    padding: 10px;
+}
+
+.MMod {
+    border: 1px solid #EEEEEE;
+}
+
+#Logs .UserLogs {
+    margin: 20px 10px;
+    list-style-type: none;
+}
+
+.Tweet {
+    border-bottom: 1px dashed #CCCCCC;
+    margin: 0 0 10px;
+    padding: 0 0 5px;
+}
+
+.ostable {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.ostable td {
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.Tweet .TweetUser {
+    width: 48px;
+}
+
+.Tweet a {
+    text-decoration: none;
+}
+
+.Tweet .TweetUser img {
+    height: 32px;
+    margin-top: 5px;
+    width: 32px;
+}
+
+.Tweet .TweetContent {
+    color: #333333;
+}
+
+.Tweet .TweetContent h5 {
+    color: #999999;
+    font-size: 10pt;
+    font-weight: normal;
+}
+
+.Tweet .TweetContent .post {
+    font-size: 10.5pt;
+    line-height: 22px;
+    margin: 5px 0 0;
+    overflow: hidden;
+}
+
+.Tweet .TweetContent .ref {
+    background: url("../img/up_arrow.gif") no-repeat scroll 15px 0 transparent;
+    font-size: 9pt;
+    margin: 3px 0 0;
+    padding-top: 5px;
+}
+
+.Tweet .TweetContent .ref .p {
+    background: none repeat scroll 0 0 #F6F6F6;
+    border: 1px solid #CCCCCC;
+    color: #999999;
+    padding: 5px;
+}
+
+.Tweet .TweetContent .bottom {
+    height: 18px;
+    margin: 10px 0 0;
+}
+
+.Tweet .TweetContent .opts {
+    float: right;
+    font-size: 8pt;
+}
+
+.Tweet .TweetContent .time {
+    color: #888888;
+    font-size: x-small;
+    margin: 0;
+}
+
+.admin .AdminNav {
+    background: none repeat scroll 0 0 #9954BB;
+    font-size: 14pt;
+    padding: 10px;
+}
+
+.admin .AdminNav a.u {
+    width: 40px;
+}
+
+.admin .AdminNav a.u img {
+    height: 40px;
+    width: 40px;
+}
+
+.admin .AdminNav a.h {
+    color: #FFFFFF;
+    margin: 5px 0 0 10px;
+}
+
+.admin .Mod {
+    background: none repeat scroll 0 0 #EAEAEA;
+    color: #666666;
+    margin: 3px 0 0;
+    overflow: hidden;
+    padding: 5px 0;
+}
+
+.admin .Mod .page-header {
+    border-bottom: 2px solid #6E7B8B;
+}
+
+.admin .Mod ul, .Mod ol {
+    line-height: 24px;
+    margin: 10px;
+    list-style-type: none;
+}
+
+.admin .Mod li.caption {
+    margin-bottom: 20px;
+}
+
+.admin .Mod li.caption ol {
+    line-height: 30px;
+    margin: 10px 0 0;
+}
+
+.admin .Mod li.caption ol li {
+    padding-left: 10px;
+    line-height: 30px;
+}
+
+.admin .Mod li.caption ol li.active {
+    background: none repeat scroll 0 0 #F6F6F6;
+    font-weight: bold;
+}
+
+.admin .Mod li.caption ol li.active a {
+    color: #333333;
+}
+
+.news .detail {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 1px 3px rgba(198, 198, 198, 0.5);
+    margin-top: 10px;
+    /*padding: 15px 10px 10px;*/
+}
+
+.news .detail p,blockquote {
+    margin: 5px 5px 10px;
+    padding-bottom: 0;
+}
+
+.news .detail .newscontent {
+    font-size: 10.5pt;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.textcontent {
+    line-height: 1.6;
+}
