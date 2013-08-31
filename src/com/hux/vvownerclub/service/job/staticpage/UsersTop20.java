@@ -30,7 +30,7 @@ public class UsersTop20 implements Runnable {
 
         List<Record> rlist = Db.find("select u.id,u.`name`,u.url,u.pic from " +
                 "(select userid,count(*) as total from t_mem_log) as l " +
-                "left join t_user u on l.userid = u.id " +
+                "inner join t_user u on l.userid = u.id " +
                 "order by total desc " +
                 "limit 0,20");
 

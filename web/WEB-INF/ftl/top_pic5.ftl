@@ -8,17 +8,20 @@
         <li data-target="#myCarousel" data-slide-to="4"></li>
     </ol>
     <div class="carousel-inner">
-        <#list rlist as x>
-            <div class="item <#if x_index == 0>active</#if>">
-                <img src="${x.indexpic}" alt="${x.title}">
+        <#if rlist?exists>
+            <#list rlist as x>
+                <div class="item <#if x_index == 0>active</#if>">
+                    <img src="${x.indexpic}" alt="${x.title}">
 
-                <div class="carousel-caption">
-                    <h4><a target="_blank" href="/news/${x.id}">${x.title}</a></h4>
+                    <div class="carousel-caption">
+                        <h4><a target="_blank" href="/news/${x.id}">${x.title}</a></h4>
 
-                    <p>${x.indexs}</p>
+                        <p>${x.indexs}</p>
+                    </div>
                 </div>
-            </div>
-        </#list>
+            </#list>
+        </#if>
+
 
     </div>
 

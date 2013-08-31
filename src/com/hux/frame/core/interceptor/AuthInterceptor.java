@@ -2,11 +2,13 @@ package com.hux.frame.core.interceptor;
 
 import com.hux.frame.util.ContantsUtil;
 import com.hux.frame.util.WebUtils;
+import com.hux.frame.util.encrypt.TripleDes;
 import com.hux.vvownerclub.dbmodel.TUser;
 import com.jfinal.aop.Interceptor;
 import com.jfinal.core.ActionInvocation;
 import com.jfinal.core.Controller;
 import net.sf.json.JSONObject;
+import org.apache.commons.lang.StringUtils;
 
 /**
  * Created with IntelliJ IDEA.
@@ -16,9 +18,10 @@ import net.sf.json.JSONObject;
  */
 public class AuthInterceptor implements Interceptor {
     @Override
-    public void intercept(ActionInvocation ai){
+    public void intercept(ActionInvocation ai) {
 
         Controller c = ai.getController();
+
         TUser user = c.getSessionAttr(ContantsUtil._SESSIONOB);
         if (user == null) {//没有登录
 
@@ -26,7 +29,7 @@ public class AuthInterceptor implements Interceptor {
             if (WebUtils.isAjaxRequest(c.getRequest())) {
 
                 JSONObject ob = new JSONObject();
-                ob.put("_nomsg","nologin");
+                ob.put("_nomsg", "nologin");
                 c.renderJson(ob);
             } else {
                 c.redirect("/");

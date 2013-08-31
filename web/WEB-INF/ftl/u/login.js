@@ -4,8 +4,16 @@ $(function () {
 
     $("#sub").click(function (e) {
 
+        e.preventDefault();
+
         $this = $(this);
         var param = AKF.formParams($("#loginForm"));
+        if($("input[name='remindme']").attr("checked") == "checked") {
+            param.push({
+                name : "remindme",
+                value : "true"
+            })
+        }
         if ($("#loginForm").validation()) {
 
             $this.text("登录中，请稍候。。。");
@@ -28,6 +36,5 @@ $(function () {
             })
         }
 
-        e.preventDefault();
     });
 });

@@ -41,6 +41,14 @@
                     </div>
                 </div>
                 <div class="control-group">
+                    <label class="control-label"></label>
+
+                    <div class="controls">
+                        <input type="checkbox" name="remindme" style="margin-top: 0px;">  记住我
+                        <span class="help-block">可以一个星期不需要登录</span>
+                    </div>
+                </div>
+                <div class="control-group">
                     <div class="controls">
                         <button id="sub" class="btn btn-success">登录</button>
                     </div>

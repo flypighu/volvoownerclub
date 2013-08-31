@@ -236,12 +236,14 @@ public class MemberController extends BaseController {
 
         String email = getPara("email");
         String password = getPara("password");
+        String remindme = getPara("remindme", "false");
         TUser user = TUser.dao.findFirst("select * from t_user where login_email = ?", email);
         if (null == user) {
             renderAKFJsonError("用户名：" + email + "不存在！");
         } else {
 
             taskExecutor.execute(new MemLogTask(user.getInt("id"), "登录"));
+
 
             //如果密码不一样
             if (!TripleDes.decrypt(user.getStr("password"), null).equals(password)) {
@@ -255,6 +257,12 @@ public class MemberController extends BaseController {
                 user.set("lastlogintime", new Date());
                 user.update();
                 setSessionAttr(ContantsUtil._SESSIONOB, user);
+
+                if (remindme.equals("true")) {
+
+                    String vvid = TripleDes.encrypt(email + "_" + user.getStr("password"), null);
+                    setCookie("vvid", vvid, 60 * 60 * 24 * 30);
+                }
                 renderAKFJsonSuccess();
             }
         }
@@ -270,6 +278,7 @@ public class MemberController extends BaseController {
         taskExecutor.execute(new MemLogTask(user.getInt("id"), "注销"));
 
         this.removeSessionAttr(ContantsUtil._SESSIONOB);
+        removeCookie("vvid");
         renderAKFJsonSuccess();
     }
 

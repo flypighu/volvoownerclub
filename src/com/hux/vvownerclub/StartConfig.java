@@ -3,9 +3,11 @@ package com.hux.vvownerclub;
 import com.hux.frame.core.activerecord.CaseInsensitiveContainerFactory;
 import com.hux.frame.core.controller.StaticController;
 import com.hux.frame.core.handler.CommonAttrHandler;
+import com.hux.frame.core.interceptor.CookieInterceptor;
 import com.hux.frame.core.interceptor.ExceptionInterceptor;
 import com.hux.frame.core.interceptor.FreemarkerInterceptor;
 import com.hux.frame.util.SpringContextUtil;
+import com.hux.frame.util.encrypt.TripleDes;
 import com.hux.vvownerclub.controller.*;
 import com.hux.vvownerclub.dbmodel.*;
 import com.hux.vvownerclub.service.job.staticpage.*;
@@ -88,6 +90,7 @@ public class StartConfig extends JFinalConfig {
 
     @Override
     public void configInterceptor(Interceptors interceptors) {
+        interceptors.add(new CookieInterceptor());
         interceptors.add(new FreemarkerInterceptor());
         interceptors.add(new ExceptionInterceptor());
         interceptors.add(new IocInterceptor());
@@ -124,5 +127,9 @@ public class StartConfig extends JFinalConfig {
     @Override
     public void beforeJFinalStop() {
         super.beforeJFinalStop();
+    }
+
+    public static void main(String[] args) {
+        System.out.println(TripleDes.encrypt("ekin2188ps2", null));
     }
 }
