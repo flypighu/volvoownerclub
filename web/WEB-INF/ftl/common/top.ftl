@@ -6,28 +6,33 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="brand" href="#">沃尔沃车友俱乐部</a>
+            <a class="brand" href="/">沃沃 旅行游记 分享</a>
 
             <div class="nav-collapse collapse">
                 <ul class="nav">
                     <li rel="index"><a href="${_BASE_PATH}/">首页</a></li>
                     <li rel="news"><a href="${_BASE_PATH}/news">资讯</a></li>
+                    <li rel="1"><a href="${_BASE_PATH}/discuss?c=1">沃沃问答</a></li>
+                    <li rel="2"><a href="${_BASE_PATH}/discuss?c=2">维修改装</a></li>
+                    <li rel="3"><a href="${_BASE_PATH}/discuss?c=3">自驾游</a></li>
+                    <!--
+                    <li rel="4"><a href="${_BASE_PATH}/discuss?c=4">沃友摄影</a></li>
+                    -->
+                    <li rel="5"><a href="${_BASE_PATH}/discuss?c=5">站务/建议</a></li>
+                    <!--
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">讨论区 <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li rel="question"><a href="${_BASE_PATH}/discuss/question">沃沃问答</a></li>
-                            <li rel="repair"><a href="${_BASE_PATH}/discuss/repair">维修改装</a></li>
-                            <li rel="selfdriving"><a href="${_BASE_PATH}/discuss/selfdriving">自驾游</a></li>
-                            <li rel="photography"><a href="${_BASE_PATH}/discuss/photography">沃友摄影</a></li>
-                            <li rel="advice"><a href="${_BASE_PATH}/discuss/advice">站务/建议</a></li>
                         </ul>
                     </li>
+
                     <li rel="blog"><a href="#">博客</a></li>
                     <li rel="community"><a href="#about">车友圈</a></li>
+                    -->
                 </ul>
                 <div class="navbar-text pull-right" style="color: #ddd;">
                 <#if _sessionob?exists>
-                ${ _sessionob.getStr("name")},您好 <a href="${_BASE_PATH}/u/${ _sessionob.getStr("name")}"
+                ${ _sessionob.getStr("name")},您好 <a href="${_BASE_PATH}/u/${ _sessionob.getStr("url")}"
                                                     class="navbar-link">我的空间</a> | <a href="${_BASE_PATH}/admin/releasesNew"
                                                                                       class="navbar-link">投递新闻</a> | <a
                         id="logout" href="#" class="navbar-link">退出</a>

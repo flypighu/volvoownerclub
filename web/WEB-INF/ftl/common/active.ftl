@@ -1,0 +1,30 @@
+<html>
+<head></head>
+<body>
+<p>
+
+<h1>${name} 用户已经激活</h1>
+</p>
+<p>
+<table>
+    <tbody>
+    <tr>
+        <td>登录名：</td>
+        <td>${login_email}</td>
+    </tr>
+    <tr>
+        <td>密码：</td>
+        <td>${password}</td>
+    </tr>
+    </tbody>
+</table>
+</p>
+<p>
+    登录后，请记得修改密码。
+</p>
+<hr>
+<p>
+    请不要回复该邮件，该邮件是沃沃车友会官方邮件。
+</p>
+</body>
+</html>

@@ -1,8 +1,10 @@
 package com.hux.frame.util;
 
+import org.apache.commons.lang.time.DateFormatUtils;
 import org.apache.commons.lang.time.DateUtils;
 
 import java.text.DateFormat;
+import java.text.ParseException;
 import java.util.Date;
 
 /**
@@ -64,11 +66,19 @@ public class DateUtil {
         return "0分钟前";
     }
 
+    public static Date parseDate(String dateStr) throws ParseException {
+
+        return DateUtils.parseDate(dateStr, pattern);
+    }
+
     public static void main(String[] args) throws Exception {
 
        // System.out.println(checkTimeQian(DateUtils.parseDate("2013-07-18 14:57:26", pattern)));
         DateFormat format2 = new java.text.SimpleDateFormat("yyyy/MMdd");
         System.out.println(format2.format(new Date()));
+
+        String s = "并行和分布式将支撑起更大的计算平台系统。而更高层和更智能化的交换网络系统也将成asdf";
+        System.out.println(s.length());
     }
 
 }

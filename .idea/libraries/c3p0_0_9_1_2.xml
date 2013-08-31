@@ -24,6 +24,9 @@
       <root url="jar://$PROJECT_DIR$/lib/c3p0-0.9.2.1.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/mchange-commons-java-0.2.3.4.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/mysql-connector-java-5.1.20-bin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cron4j-2.2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/guava-14.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/joor-0.9.4.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

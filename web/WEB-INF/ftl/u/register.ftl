@@ -28,34 +28,39 @@
 
                     <div class="controls">
                         <input check-type="required mail" name="email" class="input-xlarge" type="text"
-                               placeholder="请填写真实邮箱，用于激活您的帐号">
+                               placeholder="请填写真实邮箱，用于接收您的帐号">
+                        <span class="help-block">本社区没有开放注册，您的注册经过我们审核之后，会把帐号、密码发送到您的邮箱。</span>
                     </div>
                 </div>
                 <div class="control-group">
-                    <label class="control-label" for="inputPassword">姓名：</label>
+                    <label class="control-label">姓名：</label>
 
                     <div class="controls">
                         <input check-type="required" name="username" class="input-xlarge" type="text"
                                placeholder="不能超过10个字">
+                        <span class="help-block">是您在本社区的名称哦</span>
                     </div>
                 </div>
                 <div class="control-group">
-                    <label class="control-label" for="inputPassword">登录密码：</label>
+                    <label class="control-label">车牌号码：</label>
 
                     <div class="controls">
-                        <input check-type="required" name="password" class="input-xlarge" type="password"
-                               placeholder="至少4位">
+                        <input check-type="required" name="carNo" class="input-xlarge" type="text"
+                               placeholder="请填写真实的车牌号码">
+                        <span class="help-block">本社区是一个真实的社区，因此需要您的真实信息，车牌号码不会在本社区的任何地方公开。</span>
                     </div>
                 </div>
                 <div class="control-group">
-                    <label class="control-label" for="inputPassword">密码确认：</label>
+                    <label class="control-label">车友会车标号：</label>
 
                     <div class="controls">
-                        <input check-type="required" class="input-xlarge" type="password" name="repassword">
+                        <input name="flagNo" class="input-xlarge" type="text"
+                               placeholder="请填写车友会车标号">
+                        <span class="help-block">没有车标号的可以不填写，注册成功后可以在线申请车标。</span>
                     </div>
                 </div>
                 <div class="control-group">
-                    <label class="control-label" for="inputPassword">性别：</label>
+                    <label class="control-label">性别：</label>
 
                     <div class="controls">
                         <select class="input-medium" name="gender">
@@ -65,7 +70,7 @@
                     </div>
                 </div>
                 <div class="control-group">
-                    <label class="control-label" for="inputPassword">居住地区：</label>
+                    <label class="control-label">居住地区：</label>
 
                     <div class="controls">
                         <select class="input-medium"
@@ -78,7 +83,7 @@
                             <option value="浙江">浙江</option>
                             <option value="重庆">重庆</option>
                             <option value="安徽">安徽</option>
-                            <option value="福建">福建</option>
+                            <option value="福建" selected>福建</option>
                             <option value="甘肃">甘肃</option>
                             <option value="广西">广西</option>
                             <option value="贵州">贵州</option>
@@ -112,6 +117,27 @@
                     </div>
                 </div>
                 <div class="control-group">
+                    <label class="control-label">选择车型：</label>
+
+                    <div class="controls">
+                        <select class="input-medium"
+                                onchange="showcar(this.value, document.getElementById('carPz'));"
+                                name="cType">
+                            <option value="沃尔沃C30">沃尔沃C30</option>
+                            <option value="沃尔沃C70">沃尔沃C70</option>
+                            <option value="沃尔沃S40">沃尔沃S40</option>
+                            <option value="沃尔沃S60">沃尔沃S60</option>
+                            <option value="沃尔沃S80L">沃尔沃S80L</option>
+                            <option value="沃尔沃XC60">沃尔沃XC60</option>
+                            <option value="沃尔沃XC90">沃尔沃XC90</option>
+                            <option value="沃尔沃V40">沃尔沃V40</option>
+                            <option value="沃尔沃V60">沃尔沃V60</option>
+                        </select>
+                        <select check-type="required" class="input-large" name="carPz" id="carPz"></select>
+                        <script src="${_BASE_PATH}/getCarJs" type="text/javascript"></script>
+                    </div>
+                </div>
+                <div class="control-group">
                     <div class="controls">
                         <a id="sub" class="btn btn-success">注册新用户</a>
                     </div>
@@ -123,6 +149,4 @@
     </div>
 <#include "/WEB-INF/ftl/common/foot.ftl"/>
 </div>
-
-
 </body>

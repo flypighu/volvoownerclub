@@ -1,4 +1,6 @@
-body,table,input,textarea,select,button {font-family:Microsoft YaHei,Verdana,sans-serif,SimSun;}
+body, table, input, textarea, select, button {
+    font-family: Microsoft YaHei, Verdana, sans-serif, SimSun;
+}
 
 body {
     padding-top: 60px;
@@ -20,17 +22,17 @@ body {
     overflow: hidden;
 }
 
-.VVnews ul li .date{
+.VVnews ul li .date {
     color: #666666;
     font-size: 8pt;
 }
 
-.VVnews ul li.today a{
+.VVnews ul li.today a {
     background: url("../img/icons2.gif") no-repeat scroll 0 -234px transparent;
     padding-left: 12px;
 }
 
-.VVnews ul li.other a{
+.VVnews ul li.other a {
     background: url("../img/icons2.gif") no-repeat scroll 0 -284px transparent;
     padding-left: 12px;
     color: #3E62A6;
@@ -42,17 +44,17 @@ body {
     overflow: hidden;
 }
 
-.hotnews ul li .date{
+.hotnews ul li .date {
     color: #666666;
     font-size: 8pt;
     margin-left: 20px;
 }
 
-.hotnews ul li .stat{
+.hotnews ul li .stat {
     color: #666666;
 }
 
-.hotnews ul li .stat em{
+.hotnews ul li .stat em {
     color: #AA0000;
     font-style: normal;
     margin: 0 2px;
@@ -73,11 +75,9 @@ body {
     margin: 0 0 5px;
 }
 
-
 .newsList li .date {
     color: #666666;
 }
-
 
 .newsList li .detail {
     color: #666666;
@@ -124,54 +124,58 @@ body {
     text-decoration: none;
 }
 
-.leftAd{
+.leftAd {
     height: 50px;
     margin-top: 10px;
     border: solid 1px;
 }
 
-.discuss .table{
+.discuss .table {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.discuss .table td{
+.discuss .table td {
     white-space: nowrap;
     border-bottom: 1px dashed #CCCCCC;
 }
 
-.discuss .table td.thread a{
+.discuss .table td.thread a {
     height: 18px;
     line-height: 18px;
     padding-left: 20px;
     text-decoration: none;
 }
 
-.discuss .table td.thread a.top{
+.discuss .table td.thread a.top {
     color: #AA0000;
     font-weight: bold;
 }
 
-.discuss .table td.thread span.stat{
+.discuss .table td.thread span.stat {
     color: #888888;
     font-size: 9pt;
     margin-left: 10px;
 }
 
-.discuss .table td.lastpost{
+.discuss .table td.lastpost {
     color: #888888;
     font-size: 9pt;
     text-align: right;
 }
 
-.hotuser .table td{
+
+.hotuser ul li {
+    float: left;
+    margin: 0 0 10px 10px;
+    overflow: hidden;
     text-align: center;
-    border: 0;
 }
 
-.hotuser .table td img{
-    height: 60px;
-    width: 60px;
+
+.hotuser ul li img {
+    height: 64px;
+    width: 64px;
 }
 
 .TopTweets {
@@ -179,19 +183,19 @@ body {
     margin-left: 0;
 }
 
-.TopTweets li{
+.TopTweets li {
     border-bottom: 1px dashed #DDDDDD;
     margin: 0 0 5px;
     padding: 0 0 8px;
 }
 
-.TopTweets li .portrait{
+.TopTweets li .portrait {
     float: left;
     padding-top: 3px;
     width: 45px;
 }
 
-.TopTweets li .portrait img{
+.TopTweets li .portrait img {
     background: none repeat scroll 0 0 #FFFFFF;
     border: 1px solid #CCCCCC;
     height: 32px;
@@ -199,7 +203,7 @@ body {
     width: 32px;
 }
 
-.TopTweets li .body{
+.TopTweets li .body {
     float: left;
     font-size: 9pt;
     overflow: hidden;
@@ -294,7 +298,7 @@ body {
     padding: 3px 0;
 }
 
-.hottag a{
+.hottag a {
     margin: 2px 2px 2px 0;
     text-decoration: none;
     white-space: nowrap;
@@ -313,6 +317,7 @@ body {
 .thread_type_1 {
     background: url("../img/thread_1.gif") no-repeat scroll left center transparent;
 }
+
 .thread_type_2 {
     background: url("../img/thread_2.gif") no-repeat scroll left center transparent;
 }
@@ -339,18 +344,18 @@ body {
     margin-top: 20px;
 }
 
-#footer .about a{
-     margin-right: 20px;
+#footer .about a {
+    margin-right: 20px;
 }
 
-#footer .about span{
+#footer .about span {
     line-height: 30px;
 }
 
 #scrollUp {
     bottom: 20px;
     right: 20px;
-    height: 38px;  /* Height of image */
+    height: 38px; /* Height of image */
     width: 38px; /* Width of image */
     background: url("../img/top.png") no-repeat;
 }
@@ -416,7 +421,7 @@ body {
 }
 
 .member .Opts a.a1 {
-    background-color: #9954BB;
+    background-color: #3FB618;
 }
 
 .member .Opts a {
@@ -430,13 +435,12 @@ body {
 
 .member .Opts a.a2 {
     margin-left: 4px;
-    background-color: #9954BB;
+    background-color: #3FB618;
 }
 
 .member .Opts a.blog i {
     background-position: 0 -67px;
 }
-
 
 .member .Opts a.admin i {
     background-position: 0 -201px;
@@ -494,6 +498,42 @@ body {
     text-align: right;
 }
 
+.member .RMod {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #EEEEEE;
+    padding: 10px
+}
+
+.member .RMod .page-header h4{
+    color: #4682B4;
+    font-size: 16pt
+}
+
+.member .RMod ul {
+    list-style-type: none;
+    margin: 10px;
+}
+
+.member .RMod ul li {
+    margin: 10px 0 0;
+}
+
+.member .RMod ul li strong {
+    font-size: 10.5pt;
+    font-weight: bold;
+    margin: 0;
+    color: #333333;
+}
+
+.member .RMod ul li p {
+    color: #666666;
+}
+
+.member .RMod ul li p img {
+    width: 100px;
+    height: 100px;
+}
+
 #MyTweetForm {
     border: 1px solid #EEEEEE;
     padding: 10px 15px;
@@ -524,7 +564,7 @@ body {
 
 #TForm #TFormEditor {
     background: none repeat scroll 0 0 #FFFFFF;
-    border: 1px solid #9954BB;
+    border: 1px solid #3FB618;
     margin: 2px 0 0;
     padding: 2px;
 }
@@ -546,7 +586,7 @@ body {
 }
 
 #TFormOpts .B {
-    background: none repeat scroll 0 0 #9954BB;
+    background: none repeat scroll 0 0 #3FB618;
     border: 0 none;
     color: #FFFFFF;
     cursor: pointer;
@@ -710,23 +750,342 @@ body {
 
 .news .detail {
     background: none repeat scroll 0 0 #FFFFFF;
-    border: 1px solid #CCCCCC;
+    /*border: 1px solid #CCCCCC;*/
     box-shadow: 0 1px 3px rgba(198, 198, 198, 0.5);
     margin-top: 10px;
-    /*padding: 15px 10px 10px;*/
+    padding: 15px 10px 10px;
 }
 
-.news .detail p,blockquote {
+.news .detail p {
+    font-size: 12pt;
+    margin: 5px 5px 10px;
+    overflow: hidden;
+}
+
+.news .detail .nextprev {
+    line-height: 30px;
+}
+
+.news blockquote, p {
     margin: 5px 5px 10px;
     padding-bottom: 0;
+    font-size: 10.5pt;
 }
 
-.news .detail .newscontent {
-    font-size: 10.5pt;
+.news .detail .toolbar {
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 1px 3px rgba(198, 198, 198, 0.5);
+    margin: 10px 10px 15px;
+    padding: 5px 5px 5px 5px;
+    vertical-align: middle;
+    height: 21px;
+}
+
+.news .comments {
+    margin: 20px 0 0;
+}
+
+.news .comments h2 {
+    background: none repeat scroll 0 0 #379F15;
+    color: #FFFFFF;
+    font-size: 11pt;
+    line-height: 24px;
+    padding: 0 5px;
+}
+
+.news .comments h2 .more{
+    color: #FFFFFF;
+    float: right;
+    font-size: 9pt;
+    font-weight: normal;
+}
+
+.news .comments ul {
+    list-style-type: none;
+    padding: 0 10px 0 0;
+}
+
+.news .comments ul li {
     margin: 10px 0;
+}
+
+.news .comments ul li .portrait {
+    vertical-align: top;
+    width: 45px;
+}
+
+.news .comments ul li .portrait img {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #EEEEEE;
+    height: 32px;
+    padding: 2px;
+    width: 32px;
+}
+
+.news .comments ul li .body {
+    font-size: 9pt;
+    vertical-align: top;
+    word-break: break-all;
+}
+
+.news .comments ul li .body .r_title {
+    color: #888888;
+    font-size: 9pt;
+}
+
+.news .comments ul li .body .r_content {
+    color: #0000AA;
+    margin: 5px 0 0;
     overflow: hidden;
+}
+
+.news .comments ul li.row_0 {
+    background: none repeat scroll 0 0 #F6F6F6;
 }
 
 .textcontent {
     line-height: 1.6;
+}
+
+
+.TextContent div.ref {
+    background: none repeat scroll 0 0 #FFFEC8;
+    border: 1px solid #DDDDDD;
+    font-size: 9pt;
+    margin: 0 0 10px;
+    padding: 2px;
+}
+
+.TextContent div.ref h4 {
+    background: none repeat scroll 0 0 #CC9966;
+    color: #FFFFFF;
+    font-size: 10pt;
+    margin: 0;
+    padding: 1px 3px;
+}
+
+.TextContent div.ref p {
+    color: #666666;
+    font-size: 9pt;
+    line-height: 20px;
+    margin: 0;
+    padding: 2px;
+}
+
+.commentForm {
+    margin: 0 5px;
+    padding-left: 45px;
+}
+
+#myCarousel div.item {
+    height: 500px;
+}
+
+.logs {
+    list-style-type: none;
+    margin: 20px 0 0;
+}
+
+
+.logs li {
+    border-bottom: 1px solid #EEEEEE;
+    margin: 0 0 10px;
+    overflow: hidden;
+    padding: 0 0 10px;
+}
+
+.logs li .portrait {
+    float: left;
+    width: 50px;
+}
+
+.logs li a {
+    text-decoration: none;
+}
+
+.logs li .portrait img {
+    height: 40px;
+    margin-top: 2px;
+    width: 40px;
+}
+
+.logs li .tweet {
+    float: left;
+}
+
+.logs li .tweet p {
+    color: #000000;
+    line-height: 22px;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+.logs li .tweet .outline {
+    color: #888888;
+    font-size: 9pt;
+}
+
+.Tweet {
+    border-bottom: 1px dashed #CCCCCC;
+    margin: 0 0 10px;
+    padding: 0 0 5px;
+}
+
+.Tweet .TweetUser {
+    width: 48px;
+}
+
+.Tweet a {
+    text-decoration: none;
+}
+
+.Tweet .TweetUser img {
+    height: 32px;
+    margin-top: 5px;
+    width: 32px;
+}
+
+.Tweet .TweetContent {
+    color: #333333;
+}
+
+.Tweet .TweetContent h5 {
+    color: #999999;
+    font-size: 10pt;
+    font-weight: normal;
+}
+
+.Tweet .TweetContent .post {
+    font-size: 10.5pt;
+    line-height: 22px;
+    margin: 5px 0 0;
+    overflow: hidden;
+}
+
+.Tweet .TweetContent .post {
+    font-size: 10.5pt;
+    line-height: 22px;
+    margin: 5px 0 0;
+    overflow: hidden;
+}
+
+.Tweet .TweetContent .opts {
+    float: right;
+    font-size: 8pt;
+}
+
+.Tweet .TweetContent .time {
+    color: #888888;
+    font-size: x-small;
+    margin: 0;
+}
+
+#TweetReplyForm textarea {
+    display: block;
+    font-size: 9pt;
+    height: 50px;
+    margin: 10px 0 5px;
+    padding: 2px;
+    width: 98%;
+}
+
+#TweetReplyForm .TweetReplyOptions {
+    float: right;
+}
+
+.TweetReplyOptions {
+    height: 24px;
+    line-height: 24px;
+}
+
+#TweetReplyForm #btn_submit {
+    font-weight: bold;
+    margin-right: 5px;
+    padding: 2px 3px;
+}
+
+#TweetFormPopupWraper {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+}
+
+#TweetFormPopupWraper .emotions {
+    background-position: 51px 0;
+}
+
+#TweetFormPopupArrow {
+    background-image: url("../img/up_arrow.gif");
+    background-repeat: no-repeat;
+    padding-top: 5px;
+}
+
+#TweetFormPopup {
+    background: none repeat scroll 0 0 #FFFFCC;
+    border: 2px solid #CCCCCC;
+    padding: 5px;
+    width: 392px;
+}
+
+#TweetFormPopup .TweetPopupTitle {
+    background: none repeat scroll 0 0 #666666;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin: 0 0 10px;
+    padding: 3px 5px;
+}
+
+#TweetFormPopup .TweetPopupTitle a {
+    color: #FFFFFF;
+    float: right;
+}
+
+#TweetFormPopup a.emotion {
+    background-image: url("../img/qq.gif");
+    background-repeat: no-repeat;
+    border: 1px solid #F6F6F6;
+    float: left;
+    height: 24px;
+    margin: 0 2px 4px 0;
+    width: 24px;
+}
+
+.TweetRpls ul {
+    margin: 0 0 10px 0px;
+}
+.TweetRpls li {
+    list-style-type: none;
+    border-bottom: 1px dashed #CCCCCC;
+    padding: 10px 0 5px;
+}
+
+.TweetRpls li .portrait {
+    width: 30px;
+}
+
+.TweetRpls li .portrait img {
+    height: 24px;
+    margin: 5px 0 0;
+    width: 24px;
+}
+
+.TweetRpls li .TweetReplyBody {
+    overflow: hidden;
+    width: 450px;
+}
+
+.TweetRpls li .TweetReplyBody .post {
+    line-height: 20px;
+}
+
+.TweetRpls li .TweetReplyBody .opts {
+    color: #999999;
+    float: none;
+    font-size: 8pt;
+    height: 18px;
+    margin: 10px 0 0;
+}
+
+.TweetRpls li .TweetReplyBody .opts .links {
+    float: right;
 }

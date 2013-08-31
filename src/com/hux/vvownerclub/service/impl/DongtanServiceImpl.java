@@ -19,16 +19,18 @@ import java.util.Map;
  * Time: 下午2:45
  */
 @Service
-public class DongtanServiceImpl implements DongtanService{
+public class DongtanServiceImpl implements DongtanService {
 
     /**
      * 获取最新的5条动弹
+     *
      * @return
      */
-    public List getTop5Tweets(){
+    public List getTop5Tweets() {
 
 
-        Page<Record> lists = Db.paginate(1, 5, "select a.*,b.pic,b.name,b.url ", " from t_move a left join t_user b on a.user = b.id order by a.rtime desc");
+        Page<Record> lists = Db.paginate(1, 5, "select a.*,b.pic,b.name,b.url ",
+                " from t_move a left join t_user b on a.user = b.id order by a.rtime desc");
 
         List list = new ArrayList<Map>();
         for (int i = 0; i < lists.getList().size(); i++) {
@@ -40,8 +42,8 @@ public class DongtanServiceImpl implements DongtanService{
             ob.put("username", record.get("name"));
             ob.put("userurl", record.get("url"));
             ob.put("txt", record.get("content"));
-            ob.put("comments", record.get("comments"));
             ob.put("dTime", DateUtil.checkTimeQian(record.getTimestamp("rtime")));
+            ob.put("comments", record.get("comments"));
             list.add(ob);
         }
         return list;

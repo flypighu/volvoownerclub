@@ -30,7 +30,10 @@ $(function () {
                 success: function (result) {
 
                     $("#dongtanTxt").val("");
-                    $(".TopTweets").find("li:last").remove();
+                    if($(".TopTweets").find("li").length == 5){
+
+                        $(".TopTweets").find("li:last").remove();
+                    }
                     $(".TopTweets").prepend(result);
                 }
             })
@@ -41,7 +44,7 @@ $(function () {
     if(isLogin){
         window.setInterval(function () {
             getTop5Tweets();
-        }, 5000);
+        }, 15000);
     }
 
 });

@@ -71,12 +71,12 @@
                     <td>${x.name!}</td>
                     <td>${x.reltime!}</td>
                     <#if shzt == "0502">
-                        <td>${x.reviewman}</td>
-                        <td>${x.reviewtime}</td>
+                        <td>${x.reviewman!}</td>
+                        <td>${x.reviewtime!}</td>
                     </#if>
                     <#if shzt == "0504">
-                        <td>${x.backman}</td>
-                        <td>${x.backtime}</td>
+                        <td>${x.backman!}</td>
+                        <td>${x.backtime!}</td>
                     </#if>
                     <#if shzt == "0501">
                         <td><a href="${_BASE_PATH}/admin/reviewnews/${x.id!}" class="btn btn-small btn-primary">审核</a>

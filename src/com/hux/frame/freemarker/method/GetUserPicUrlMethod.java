@@ -16,7 +16,7 @@ public class GetUserPicUrlMethod implements TemplateMethodModel {
     @Override
     public Object exec(List list) throws TemplateModelException {
         if (null == list.get(0) || "".equals(list.get(0))) {
-            return "assets/img/portrait.gif";
+            return "/assets/img/portrait.gif";
         }
         return list.get(0);
     }

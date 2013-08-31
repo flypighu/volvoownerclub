@@ -10,11 +10,11 @@
     <script src="${_BASE_PATH}/assets/bootstrap/js/bootstrap-validation.js"></script>
     <script charset="utf-8" src="${_BASE_PATH}/assets/kindeditor/kindeditor-min.js"></script>
     <script charset="utf-8" src="${_BASE_PATH}/assets/kindeditor/lang/zh_CN.js"></script>
-
+    <script src="${_BASE_PATH}/assets/jcrop/ajaxfileupload.js"></script>
     <script src="${_BASE_PATH}/static/js/admin_releaseMod"></script>
 
     <title>
-        ${news.title} - 新闻修改 - 沃尔沃车友俱乐部
+    ${news.title} - 新闻修改 - 沃尔沃车友俱乐部
     </title>
 </head>
 <body>
@@ -28,7 +28,8 @@
         <div class="span9">
             <ul class="breadcrumb">
                 <li><a href="${_BASE_PATH}/u/${_sessionob.getStr("url")}">空间</a> <span class="divider">/</span></li>
-                <li><a href="${_BASE_PATH}/admin/${_sessionob.getStr("name")}">管理</a> <span class="divider">/</span></li>
+                <li><a href="${_BASE_PATH}/admin/${_sessionob.getStr("name")}">管理</a> <span class="divider">/</span>
+                </li>
                 <li><a href="${_BASE_PATH}/admin/releases">我的新闻</a> <span class="divider">/</span></li>
                 <li class="active">新闻修改</li>
             </ul>
@@ -40,11 +41,13 @@
                 <div class="span5">
                     <form id="releaseForm" class="form-horizontal">
                         <input type="hidden" name="id" value="${news.id}">
+
                         <div class="control-group">
                             <label class="control-label">新闻标题：</label>
 
                             <div class="controls">
-                                <input check-type="required" class="input-xlarge" type="text" placeholder="请输入新闻标题" name="title" value="${news.title}">
+                                <input check-type="required" class="input-xlarge" type="text" placeholder="请输入新闻标题"
+                                       name="title" value="${news.title}">
                             </div>
                         </div>
                         <div class="control-group">
@@ -58,8 +61,38 @@
                         </div>
 
                         <div class="control-group">
+                            <label class="control-label">是否显示在首页：</label>
+
                             <div class="controls">
-                                <button id="sub" class="btn btn-success">修改新闻</button>
+                                <input type="radio" name="isindex" value="N" <#if news.is_index == "N">
+                                       checked="true"</#if> param="false"> 否
+                                <input type="radio" name="isindex" value="Y" <#if news.is_index == "Y">
+                                       checked="true"</#if>  param="false"> 是
+                                <span class="help-block">选择是否该篇新闻显示在首页的图片区域</span>
+                            </div>
+                        </div>
+                        <div class="control-group zhaiyao" style="display: none">
+                            <label class="control-label">首页图片摘要：</label>
+
+                            <div class="controls">
+                                <textarea class="input-xlarge" rows="2" name="indexpics"
+                                          placeholder="请输入图片摘要">${news.indexs!""}</textarea>
+                            </div>
+                        </div>
+                        <div class="control-group picfile" style="display: none">
+                            <label class="control-label">首页图片文件：</label>
+
+                            <div class="controls">
+                                <input class="input-file" id="imgFile" name="imgFile" type="file">
+
+                                <span class="help-block">图片大小最好为700 * 500，尺寸差别太大会变形</span>
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <div class="controls">
+                                <button id="upload" class="btn btn-success" style="display: none">上传图片</button>
+                                <button id="sub" class="btn btn-success">保存新闻</button>
                             </div>
                         </div>
                     </form>
@@ -74,9 +107,10 @@
             </div>
 
             <textarea id="editor_id" name="content" style="width: 800px;height: 300px;">
-                ${news.content}
+            ${news.content}
             </textarea>
-
+            <br>
+            <img id="uploadimg" <#if news.indexpic?exists>src="${news.indexpic}"</#if>>
         </div>
     </div>
 

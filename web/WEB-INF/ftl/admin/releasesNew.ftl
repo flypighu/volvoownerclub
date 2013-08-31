@@ -10,7 +10,7 @@
     <script src="${_BASE_PATH}/assets/bootstrap/js/bootstrap-validation.js"></script>
     <script charset="utf-8" src="${_BASE_PATH}/assets/kindeditor/kindeditor-min.js"></script>
     <script charset="utf-8" src="${_BASE_PATH}/assets/kindeditor/lang/zh_CN.js"></script>
-
+    <script src="${_BASE_PATH}/assets/jcrop/ajaxfileupload.js"></script>
     <script src="${_BASE_PATH}/static/js/admin_releaseNew"></script>
 
     <title>
@@ -60,9 +60,35 @@
                                 <span class="help-block">如果是原创的新闻，则不需要填写；如果是转载的新闻，则需要填写从哪里转载的</span>
                             </div>
                         </div>
+                        <div class="control-group">
+                            <label class="control-label">是否显示在首页：</label>
+
+                            <div class="controls">
+                                <input type="radio" name="isindex" value="N" checked="true" param="false"> 否
+                                <input type="radio" name="isindex" value="Y" param="false"> 是
+                                <span class="help-block">选择是否该篇新闻显示在首页的图片区域</span>
+                            </div>
+                        </div>
+                        <div class="control-group zhaiyao" style="display: none">
+                            <label class="control-label">首页图片摘要：</label>
+
+                            <div class="controls">
+                                <textarea class="input-xlarge" rows="2" name="indexpics" placeholder="请输入图片摘要"></textarea>
+                            </div>
+                        </div>
+                        <div class="control-group picfile" style="display: none">
+                            <label class="control-label">首页图片文件：</label>
+
+                            <div class="controls">
+                                <input class="input-file" id="imgFile" name="imgFile" type="file">
+
+                                <span class="help-block">图片大小最好为700 * 500，尺寸差别太大会变形</span>
+                            </div>
+                        </div>
 
                         <div class="control-group">
                             <div class="controls">
+                                <button id="upload" class="btn btn-success" style="display: none">上传图片</button>
                                 <button id="sub" class="btn btn-success">保存新闻</button>
                             </div>
                         </div>
@@ -81,6 +107,8 @@
 
             </textarea>
 
+            <br>
+            <img id="uploadimg" style="display: none">
         </div>
     </div>
 

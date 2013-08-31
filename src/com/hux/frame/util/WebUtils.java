@@ -12,6 +12,9 @@ import org.springframework.util.Assert;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.io.File;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.regex.PatternSyntaxException;
 
 /**
  * web常用类
@@ -58,7 +61,7 @@ public class WebUtils {
      * @return
      */
     public static String getWebInfFullPath() {
-        return PathKit.getWebRootPath() + "/WEB-INF/";
+        return PathKit.getWebRootPath() + File.separator + "WEB-INF" + File.separator;
     }
 
     /**
@@ -117,4 +120,30 @@ public class WebUtils {
         return false;
     }
 
+    // 过滤特殊字符
+    public static String StringFilter(String str) throws PatternSyntaxException {
+        // 只允许字母和数字
+        // String   regEx  =  "[^a-zA-Z0-9]";
+        // 清除掉所有特殊字符
+        String regEx = "[`~!@#$%^&*()+=|{}':;',\\[\\].<>/?~！@#￥%……&*（）——+|{}【】‘；：”“’。，、？]";
+        Pattern p = Pattern.compile(regEx);
+        Matcher m = p.matcher(str);
+        return m.replaceAll("").trim();
+    }
+
+    public static String replaceBlank(String str) {
+        String dest = "";
+        if (str != null) {
+            Pattern p = Pattern.compile("\\s*|\t|\r|\n");
+            Matcher m = p.matcher(str);
+            dest = m.replaceAll("");
+        }
+        return dest;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(WebUtils.replaceBlank("引用来自“huxiang“的评论\n" +
+                "                test\n" +
+                "                盖楼1"));
+    }
 }

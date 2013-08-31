@@ -14,7 +14,7 @@ $(function () {
             },
             items: ['bold', 'italic', 'underline', 'strikethrough', 'removeformat', '|', 'insertorderedlist', 'insertunorderedlist',
                 'forecolor', 'hilitecolor', 'fontname', 'fontsize', '|', 'link', 'unlink', 'emoticons',
-                'image', 'flash', 'quote', '|', 'source', 'fullscreen', 'about'],
+                'image', 'flash', 'quote', 'table', '|', 'source', 'fullscreen', 'about'],
             htmlTags: {
                 script: ['src'],
                 font: ['color', 'size', 'face', '.background-color'],
@@ -55,10 +55,18 @@ $(function () {
     $("#sub").click(function (e) {
         e.preventDefault();
 
+
         $this = $(this);
         var param = AKF.formParams($("#releaseForm"));
         var html = editor.html();
+        var txt = editor.text();
         if ($("#releaseForm").validation()) {
+
+            if ($("input:checked").val() == "Y" && !uploaded) {
+
+                alert("请上传首页图片！");
+                return;
+            }
 
             if (html == "") {
                 alert("请输入内容！");
@@ -67,6 +75,15 @@ $(function () {
                 param.push({
                     name: "html",
                     value: html
+                }, {
+                    name: "text",
+                    value: txt
+                }, {
+                    name: "isindex",
+                    value: $("input:checked").val()
+                }, {
+                    name : "indexpic",
+                    value : $("#uploadimg").attr("src")
                 })
                 $this.text("保存中，请稍候。。。");
                 $this.attr("disabled", true);
@@ -83,5 +100,72 @@ $(function () {
         }
 
     });
+
+
+    $("#upload").click(function (e) {
+
+        $this = $(this);
+
+        if ($("#imgFile").val() == "") {
+            alert("请选择图片文件！");
+        } else {
+            $this.text("图片上传中，请稍候。。。");
+            $this.attr("disabled", true);
+            $.ajaxFileUpload({
+                    url: '${_BASE_PATH}/admin/uploadReleasesImg',
+                    secureuri: false,
+                    fileElementId: 'imgFile',
+                    dataType: 'json',
+                    success: function (data, status) {
+                        if (typeof(data.error) != 'undefined') {
+                            if (data.error != '') {
+                                alert(data.error);
+
+                            } else {
+                                $("#uploadimg").attr("src", "${_BASE_PATH}" + data.url);
+                                $("#uploadimg").show();
+                                uploaded = true;
+                            }
+                        }
+                        $this.text("上传图片");
+                        $this.attr("disabled", false);
+                    },
+                    error: function (data, status, e) {
+                        alert(e);
+                    }
+                }
+            )
+        }
+        e.preventDefault();
+    });
+
+    $("input[type='radio']").click(function () {
+        if ($("input:checked").val() == "Y") {
+
+            $("div.zhaiyao").show();
+            $("div.picfile").show();
+            $("#upload").show();
+            $("#uploadimg").show();
+            $("textarea").attr("check-type", "required");
+        }
+        if ($("input:checked").val() == "N") {
+
+            $("div.zhaiyao").hide();
+            $("div.picfile").hide();
+            $("#upload").hide();
+            $("#uploadimg").show();
+            $("textarea").removeAttr("check-type");
+
+        }
+    });
+
+    if ($("input:checked").val() == "Y") {
+
+        $("div.zhaiyao").show();
+        $("div.picfile").show();
+        $("#upload").show();
+        $("#uploadimg").show();
+        $("textarea").attr("check-type", "required");
+    }
 
 });

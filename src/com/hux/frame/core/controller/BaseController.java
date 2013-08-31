@@ -15,7 +15,8 @@ public class BaseController extends Controller {
 
     protected void render404() {
 
-        render("common/404.ftl");
+       // render("common/404.ftl");
+        render500();
     }
 
     protected void render500() {

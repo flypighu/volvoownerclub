@@ -68,12 +68,12 @@
                     <td>${x.name!}</td>
                     <td>${x.reltime!}</td>
                     <#if shzt == "0502">
-                        <td>${x.reviewman}</td>
-                        <td>${x.reviewtime}</td>
+                        <td>${x.reviewman!}</td>
+                        <td>${x.reviewtime!}</td>
                     </#if>
                     <#if shzt == "0504">
-                        <td>${x.backman}</td>
-                        <td>${x.backtime}</td>
+                        <td>${x.backman!}</td>
+                        <td>${x.backtime!}</td>
                     </#if>
                     <#if shzt == "0501">
                         <td>
@@ -82,7 +82,6 @@
                                 <a class="btn btn-primary btn-small dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="${_BASE_PATH}/admin/releasesMod/${x.id}">修改</a></li>
-                                    <li><a href="${_BASE_PATH}/admin/releasesIndexPic/${x.id}">显示在首页</a></li>
                                     <li><a rel="${x.id}" href="#" oper="del">删除</a></li>
                                 </ul>
                             </div>

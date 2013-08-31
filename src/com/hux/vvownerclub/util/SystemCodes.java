@@ -16,14 +16,6 @@ public class SystemCodes {
 
     public static final String C_0102 = "0102";
 
-    public static final String C_0301 = "0301";
-
-    public static final String C_0302 = "0302";
-
-    public static final String C_0303 = "0303";
-
-    public static final String C_0304 = "0304";
-
     public static final String C_0501 = "0501";
 
     public static final String C_0502 = "0502";

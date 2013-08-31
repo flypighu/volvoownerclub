@@ -2,11 +2,18 @@ package com.hux.vvownerclub.controller;
 
 import com.hux.frame.core.controller.BaseController;
 import com.hux.frame.core.interceptor.AuthInterceptor;
+import com.hux.vvownerclub.dbmodel.TCar;
+import com.hux.vvownerclub.dbmodel.TCarPz;
 import com.hux.vvownerclub.service.DongtanService;
 import com.jfinal.aop.Before;
 import com.jfinal.aop.ClearInterceptor;
 import com.jfinal.plugin.spring.Inject;
 import org.apache.commons.lang.StringUtils;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * 常用界面跳转
@@ -24,42 +31,11 @@ public class CommonController extends BaseController {
      */
     public void index() {
 
-
         setAttr("list", dongtanService.getTop5Tweets());
         setAttr("rel", "index");
         render("index.ftl");
     }
 
-    /**
-     * 讨论区
-     */
-    public void discuss() {
-
-        String url = getPara();
-        if (StringUtils.isBlank(url) || "question".equals(url.trim())) {
-            setAttr("rel", "question");
-            this.question();
-            return;
-        }
-        setAttr("rel", url);
-        if ("repair".equals(url.trim())) {
-            this.repair();
-            return;
-        }
-        if ("selfdriving".equals(url.trim())) {
-            this.selfdriving();
-            return;
-        }
-        if ("photography".equals(url.trim())) {
-            this.photography();
-            return;
-        }
-        if ("advice".equals(url.trim())) {
-            this.advice();
-            return;
-        }
-        render404();
-    }
 
     /**
      * 我的空间，模版
@@ -78,42 +54,31 @@ public class CommonController extends BaseController {
     }
 
     /**
-     * 沃沃问答
+     * 获取车辆选择js
      */
-    private void question() {
+    public void getCarJs() {
 
-        render("discuss/question.ftl");
+        List<TCar> clist = TCar.dao.find("select * from t_car");
+        List<Map> mapList = new ArrayList<Map>();
+        for (int i = 0; i < clist.size(); i++) {
+
+            TCar car = clist.get(i);
+            List<TCarPz> plist = TCarPz.dao.find("select * from t_car_pz where car_id = ? ", car.get("id"));
+            Map pzMap = new HashMap();
+            pzMap.put("c_type", car.getStr("c_type"));
+            StringBuilder sb = new StringBuilder();
+            for (int j = 0; j < plist.size(); j++) {
+
+                sb.append("\"").append(plist.get(j).getStr("pz_name")).append("\"");
+                if(j < plist.size() - 1){
+                    sb.append(",");
+                }
+            }
+            pzMap.put("plist", sb.toString());
+            mapList.add(pzMap);
+        }
+        setAttr("clist", mapList);
+        render("common/getcar.ftl");
     }
 
-    /**
-     * 维修改装
-     */
-    private void repair() {
-
-        render("discuss/repair.ftl");
-    }
-
-    /**
-     * 自驾游
-     */
-    private void selfdriving() {
-
-        render("discuss/selfdriving.ftl");
-    }
-
-    /**
-     * 沃友摄影
-     */
-    private void photography() {
-
-        render("discuss/photography.ftl");
-    }
-
-    /**
-     * 站务/建议
-     */
-    private void advice() {
-
-        render("discuss/advice.ftl");
-    }
 }

@@ -9,7 +9,9 @@
 	<span class="body">
 		<span class="user"><a href="${_BASE_PATH}/u/${x.userurl}">${x.username}</a>：</span>
         <span class="log">${x.txt}</span>
-        <span class="time">${x.dTime}(<a href="${_BASE_PATH}/dongtan/${x.moveid}">${x.comments}评</a>)</span>
+        <span class="time">${x.dTime}
+            (<a href="${_BASE_PATH}/dongtan/${x.moveid}">${x.comments}评</a>)
+        </span>
 	</span>
 
     <div class="clear"></div>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="285145491">
+  <component name="DataSourceManagerImpl" format="xml" hash="2732189804">
     <data-source source="LOCAL" name="mysql" product="MySQL" version="5.5.5-10.0.3-MariaDB" jdbc-version="4.0" driver-name="MySQL-AB JDBC Driver" driver-version="mysql-connector-java-5.1.22 ( Revision: ${bzr.revision-id} )" uuid="1fd5b079-1612-4b04-8f41-8fa400707a3f">
       <extra-name-characters>#@</extra-name-characters>
       <identifier-quote-string>`</identifier-quote-string>
@@ -16,6 +16,22 @@
         </library>
         <library>
           <url>file://$USER_HOME$/develop/jdbcLib/mysql-connector-license.txt</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Data Source" product="Microsoft SQL Server" version="9.00.3042" jdbc-version="4.0" driver-name="Microsoft JDBC Driver 4.0 for SQL Server" driver-version="4.0.2206.100" uuid="53cefb8d-e987-4fc7-b238-e13dbc996f52">
+      <extra-name-characters>$#@</extra-name-characters>
+      <identifier-quote-string>&quot;</identifier-quote-string>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://192.168.2.27;DatabaseName=gpsdb2_jtb1</jdbc-url>
+      <user-name>sa</user-name>
+      <user-password>dfcddfdadfd9dfcedfc8dfd9dfcb</user-password>
+      <schema-pattern>gpsdb2_1.*</schema-pattern>
+      <default-schemas>gpsdb2_1.*</default-schemas>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/IdeaProjects/configcenter/lib/sqljdbc4.jar</url>
         </library>
       </libraries>
     </data-source>

@@ -1,60 +1,166 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4c6889d-345d-4db1-a05c-302f6d482001" name="Default" comment="" />
+    <list default="true" id="d4c6889d-345d-4db1-a05c-302f6d482001" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/cron4j-2.2.5.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/guava-14.0.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/joor-0.9.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/img/qq.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hux/frame/core/interceptor/AuthTxInterceptor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hux/frame/freemarker/method/CheckTimeQian.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hux/vvownerclub/service/job/ClickReplySave.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hux/vvownerclub/service/asyntask/ClickTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/jfinal/ext/plugin/cron/Cron4jPlugin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hux/vvownerclub/controller/DiscussController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hux/vvownerclub/service/job/staticpage/HotNews.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hux/vvownerclub/service/job/staticpage/IndexDiscuss.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hux/vvownerclub/service/job/staticpage/IndexNews.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hux/vvownerclub/service/job/MemLogSave.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hux/vvownerclub/service/asyntask/MemLogTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hux/vvownerclub/service/job/staticpage/NewsTopComment20.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hux/vvownerclub/service/job/staticpage/PicTop5.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hux/vvownerclub/service/asyntask/ReplyTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hux/vvownerclub/dbmodel/TCarPz.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hux/vvownerclub/dbmodel/TDtComments.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hux/vvownerclub/dbmodel/TFollow.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hux/vvownerclub/dbmodel/TUserCar.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hux/vvownerclub/service/job/staticpage/UsersTop20.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/common/active.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/discuss/advice.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/admin/car.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/discuss/detail.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/dongtan/detail.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/discuss/detail.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/dongtan/detail.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/news/detail.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/discuss/detail_frag.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/news/detail_frag.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/common/getcar.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/news/hotnews.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/static/hotnews.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/dongtan/index.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/u/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/u/index_center_top.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/index_discuss.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/u/index_discuss.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/static/index_discuss.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/u/index_left.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/index_news.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/u/index_news.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/static/index_news.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/u/index_right.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/job.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/admin/manage/member.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/admin/manage/memberview.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/discuss/newPost.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/discuss/newPost.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/discuss/repair.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/discuss/selfdriving.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/news/top_comment20.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/static/top_comment20.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/top_pic5.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/static/top_pic5.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/top_users20.ftl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/static/top_users20.html" />
+      <change type="MOVED" beforePath="C:\Users\xiang\Documents\GitHub\volvoownerclub\src\com\hux\vvownerclub\dbmodel\TComments.java" afterPath="$PROJECT_DIR$/src/com/hux/vvownerclub/dbmodel/TNewsComments.java" />
+      <change type="MOVED" beforePath="C:\Users\xiang\Documents\GitHub\volvoownerclub\src\com\hux\vvownerclub\dbmodel\TDiscuss.java" afterPath="$PROJECT_DIR$/src/com/hux/vvownerclub/dbmodel/TDiscussComments.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hux/vvownerclub/controller/AdminController.java" afterPath="$PROJECT_DIR$/src/com/hux/vvownerclub/controller/AdminController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hux/frame/core/controller/BaseController.java" afterPath="$PROJECT_DIR$/src/com/hux/frame/core/controller/BaseController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hux/vvownerclub/controller/CommonController.java" afterPath="$PROJECT_DIR$/src/com/hux/vvownerclub/controller/CommonController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hux/frame/util/ContantsUtil.java" afterPath="$PROJECT_DIR$/src/com/hux/frame/util/ContantsUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hux/frame/util/DateUtil.java" afterPath="$PROJECT_DIR$/src/com/hux/frame/util/DateUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hux/vvownerclub/controller/DongtanController.java" afterPath="$PROJECT_DIR$/src/com/hux/vvownerclub/controller/DongtanController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hux/vvownerclub/service/impl/DongtanServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/hux/vvownerclub/service/impl/DongtanServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hux/frame/core/interceptor/FreemarkerInterceptor.java" afterPath="$PROJECT_DIR$/src/com/hux/frame/core/interceptor/FreemarkerInterceptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hux/frame/freemarker/method/GetUserPicUrlMethod.java" afterPath="$PROJECT_DIR$/src/com/hux/frame/freemarker/method/GetUserPicUrlMethod.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hux/vvownerclub/controller/MemberController.java" afterPath="$PROJECT_DIR$/src/com/hux/vvownerclub/controller/MemberController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hux/vvownerclub/controller/NewsController.java" afterPath="$PROJECT_DIR$/src/com/hux/vvownerclub/controller/NewsController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hux/vvownerclub/StartConfig.java" afterPath="$PROJECT_DIR$/src/com/hux/vvownerclub/StartConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hux/vvownerclub/util/SystemCodes.java" afterPath="$PROJECT_DIR$/src/com/hux/vvownerclub/util/SystemCodes.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hux/frame/util/WebUtils.java" afterPath="$PROJECT_DIR$/src/com/hux/frame/util/WebUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/akf/akf.js" afterPath="$PROJECT_DIR$/web/assets/akf/akf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/app_config.txt" afterPath="$PROJECT_DIR$/web/WEB-INF/app_config.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/c3p0_0_9_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/c3p0_0_9_1_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/ftl/news/detail.ftl" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/news/detail.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/ftl/index.ftl" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/index.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/ftl/news/index.ftl" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/news/index.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/ftl/u/index.ftl" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/u/index.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/ftl/index.js" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/ftl/admin/left.ftl" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/admin/left.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/ftl/common/paginate.ftl" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/common/paginate.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/ftl/admin/portrait.js" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/admin/portrait.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/ftl/admin/manage/previewnews.ftl" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/admin/manage/previewnews.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/ftl/discuss/question.ftl" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/discuss/question.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/ftl/common/regconfirm.ftl" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/common/regconfirm.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/ftl/u/register.ftl" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/u/register.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/ftl/u/register.js" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/u/register.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/ftl/admin/releaseMod.js" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/admin/releaseMod.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/ftl/admin/releaseNew.js" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/admin/releaseNew.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/ftl/admin/releases.ftl" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/admin/releases.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/ftl/admin/releasesMod.ftl" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/admin/releasesMod.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/ftl/admin/releasesNew.ftl" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/admin/releasesNew.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/ftl/admin/manage/review.ftl" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/admin/manage/review.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/ftl/admin/manage/reviewnews.ftl" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/admin/manage/reviewnews.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/akf/style.css" afterPath="$PROJECT_DIR$/web/assets/akf/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/ftl/common/top.ftl" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/common/top.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/ftl/common/template/topTweets.ftl" afterPath="$PROJECT_DIR$/web/WEB-INF/ftl/common/template/topTweets.ftl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="volvoownerclub.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/mysql" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1373695551766" ignored="false" />
     <file path="/applicationContext.xml" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1374477357909" ignored="false" />
     <file path="/web.xml" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1372940295954" ignored="false" />
-    <file path="$PROJECT_DIR$/src/com/hux/frame/core/model/DataTablesModel.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1372940394276" ignored="false" />
-    <file path="$PROJECT_DIR$/src/com/hux/frame/core/model/DataTablesRow.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1372940394276" ignored="false" />
-    <file path="/app_config.txt" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375682218487" ignored="false" />
+    <file path="/app_config.txt" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377064456362" ignored="false" />
     <file path="/User.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1372941200023" ignored="false" />
-    <file path="/StartConfig.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375883296886" ignored="false" />
+    <file path="/StartConfig.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377913472028" ignored="false" />
     <file path="/News.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1372941403975" ignored="false" />
     <file path="/TMove.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1372941477697" ignored="false" />
     <file path="/TCOMMENTS.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1372941552431" ignored="false" />
-    <file path="/TComments.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1372941552855" ignored="false" />
+    <file path="/TComments.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1376894841644" ignored="false" />
     <file path="/TDiscuss.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1372941643811" ignored="false" />
     <file path="/TDiscussPost.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1372941728147" ignored="false" />
     <file path="/TCar.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1372941821788" ignored="false" />
-    <file path="/index.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375882383803" ignored="false" />
+    <file path="/index.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377929122754" ignored="false" />
     <file path="/fragment.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375882439448" ignored="false" />
-    <file path="/CommonController.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1374485498551" ignored="false" />
-    <file path="/style.css" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375694823850" ignored="false" />
+    <file path="/CommonController.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377862554020" ignored="false" />
+    <file path="/style.css" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377930768497" ignored="false" />
     <file path="/news.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1373014293771" ignored="false" />
     <file path="/discuss.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1373015035211" ignored="false" />
     <file path="/BaseController.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1373960501912" ignored="false" />
-    <file path="/question.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1373035984673" ignored="false" />
-    <file path="/user.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1373037329237" ignored="false" />
+    <file path="/question.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377261904880" ignored="false" />
+    <file path="/user.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377916480006" ignored="false" />
     <file path="/UserController.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1373111059788" ignored="false" />
-    <file path="/top.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1373964922653" ignored="false" />
+    <file path="/top.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377436611940" ignored="false" />
     <file path="/foot.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1373110821640" ignored="false" />
-    <file path="/register.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1373964863848" ignored="false" />
-    <file path="/register.js" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1374480396358" ignored="false" />
+    <file path="/register.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377869467609" ignored="false" />
+    <file path="/register.js" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377915440308" ignored="false" />
     <file path="$PROJECT_DIR$/../gpscommon/pom.xml" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1373461115558" ignored="false" />
     <file path="$PROJECT_DIR$/../gpscommon/src/main/java/com/hux/gpscommon/usermodel/UserInfoModel.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1373459633073" ignored="false" />
     <file path="$PROJECT_DIR$/../gpscommon/src/main/java/com/hux/gpscommon/dbmodel/GpsUser.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1373459633073" ignored="false" />
     <file path="$PROJECT_DIR$/../gpscommon/src/main/java/com/hux/gpscommon/business/IBusinessService.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1373459633073" ignored="false" />
-    <file path="/MemberController.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375682446128" ignored="false" />
-    <file path="/regconfirm.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375666607171" ignored="false" />
-    <file path="/active.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1374481025394" ignored="false" />
+    <file path="/MemberController.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377932109446" ignored="false" />
+    <file path="/regconfirm.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377912176292" ignored="false" />
+    <file path="/active.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377918049479" ignored="false" />
     <file path="/login.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1373964878442" ignored="false" />
     <file path="/login.js" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1373961017531" ignored="false" />
     <file path="/TripleDes.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1373959952655" ignored="false" />
     <file path="/CommonAttrHandler.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1374484675600" ignored="false" />
-    <file path="/index.js" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375407653549" ignored="false" />
-    <file path="/DongtanController.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375361047223" ignored="false" />
-    <file path="/DateUtil.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1374677439875" ignored="false" />
-    <file path="/akf.js" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1374497741020" ignored="false" />
-    <file path="/topTweets.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1374224555051" ignored="false" />
+    <file path="/index.js" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377507763483" ignored="false" />
+    <file path="/DongtanController.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377781779250" ignored="false" />
+    <file path="/DateUtil.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377245758612" ignored="false" />
+    <file path="/akf.js" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377153429490" ignored="false" />
+    <file path="/topTweets.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377766323227" ignored="false" />
     <file path="/FreemarkerHtml.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1374219304248" ignored="false" />
     <file path="/FreemarkerInterceptor.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375881504306" ignored="false" />
     <file path="/GetUserPicUrlMethod.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1374221181303" ignored="false" />
     <file path="/ExceptionInterceptor.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1374220347893" ignored="false" />
     <file path="/DongtanService.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1374475703308" ignored="false" />
-    <file path="/DongtanServiceImpl.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1374475700973" ignored="false" />
+    <file path="/DongtanServiceImpl.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377766346426" ignored="false" />
     <file path="/MemberServiceImpl.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1374478345770" ignored="false" />
     <file path="/MemberService.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1374477797848" ignored="false" />
     <file path="/RegisterTask.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1374478314941" ignored="false" />
@@ -62,43 +168,88 @@
     <file path="/AuthInterceptor.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1374497526150" ignored="false" />
     <file path="/UserNotLoginException.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1374483395180" ignored="false" />
     <file path="/CommonInterceptor.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1374485401535" ignored="false" />
-    <file path="/AdminController.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375800110202" ignored="false" />
-    <file path="/left.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375668709291" ignored="false" />
+    <file path="/AdminController.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377935378153" ignored="false" />
+    <file path="/left.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377932024353" ignored="false" />
     <file path="/profile.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1374566540371" ignored="false" />
     <file path="/profile.js" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1374565397378" ignored="false" />
     <file path="/chpwd.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1374567213161" ignored="false" />
     <file path="/chpwd.js" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1374567170141" ignored="false" />
     <file path="/portrait.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375715347809" ignored="false" />
-    <file path="/portrait.js" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1374634246820" ignored="false" />
-    <file path="/ContantsUtil.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1374808548594" ignored="false" />
-    <file path="/WebUtils.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1374630066461" ignored="false" />
+    <file path="/portrait.js" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377144082883" ignored="false" />
+    <file path="/ContantsUtil.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377782847127" ignored="false" />
+    <file path="/WebUtils.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1376898054805" ignored="false" />
     <file path="/ImageCut.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1374636435804" ignored="false" />
     <file path="/userSettings.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1374645432667" ignored="false" />
     <file path="/userSettings.js" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1374638564857" ignored="false" />
     <file path="/releases.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375760947720" ignored="false" />
     <file path="/releases_new.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1374674488496" ignored="false" />
-    <file path="/releaseNew.js" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375796834858" ignored="false" />
-    <file path="/releasesNew.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375686076222" ignored="false" />
+    <file path="/releaseNew.js" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377765211393" ignored="false" />
+    <file path="/releasesNew.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377156709290" ignored="false" />
     <file path="/SystemCodes.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375708592118" ignored="false" />
     <file path="/releases.js" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375761004380" ignored="false" />
     <file path="$PROJECT_DIR$/../haoyao999/web/assets/akf/style.css" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375668909445" ignored="false" />
-    <file path="$PROJECT_DIR$/../haoyao999/web/WEB-INF/ftl/index.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375452029037" ignored="false" />
+    <file path="$PROJECT_DIR$/../haoyao999/web/WEB-INF/ftl/index.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1376959961850" ignored="false" />
     <file path="/review.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375713825619" ignored="false" />
     <file path="/review.js" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375712977367" ignored="false" />
-    <file path="/NewsController.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375882699818" ignored="false" />
+    <file path="/NewsController.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377260524350" ignored="false" />
     <file path="/error.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375688527865" ignored="false" />
     <file path="/previewnews.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375694461561" ignored="false" />
-    <file path="/reviewnews.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375714038994" ignored="false" />
+    <file path="/reviewnews.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377157916223" ignored="false" />
     <file path="/reviewnews.js" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375694738562" ignored="false" />
     <file path="/WeekDay.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375705609402" ignored="false" />
     <file path="/Shifou.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375705820849" ignored="false" />
     <file path="/Xingbie.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375706127593" ignored="false" />
     <file path="/GetValueByCode.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375708275272" ignored="false" />
     <file path="/TCode.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375708451216" ignored="false" />
-    <file path="/releasesMod.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375761190941" ignored="false" />
-    <file path="/Dummy.txt" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375768312556" ignored="false" />
+    <file path="/releasesMod.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377156899395" ignored="false" />
+    <file path="/Dummy.txt" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377937940972" ignored="false" />
     <file path="/paginate.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375933597205" ignored="false" />
     <file path="/PaginationDirective.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1375882480039" ignored="false" />
+    <file path="/detail.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377766204637" ignored="false" />
+    <file path="/detail.js" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377765347525" ignored="false" />
+    <file path="/detail_frag.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1376874739379" ignored="false" />
+    <file path="/job.properties" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377436299604" ignored="false" />
+    <file path="/NewsTopComment20.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377435282822" ignored="false" />
+    <file path="$PROJECT_DIR$/../haoyao999/web/WEB-INF/ftl/common/foot.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1376900495506" ignored="false" />
+    <file path="/DiscussController.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377260624695" ignored="false" />
+    <file path="/post_new.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1376918922870" ignored="false" />
+    <file path="/newPost.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1376919833853" ignored="false" />
+    <file path="/newPost.js" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1376919881377" ignored="false" />
+    <file path="$PROJECT_DIR$/../haoyao999/src/com/hux/haoyao999/controller/CommonController.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1376959956428" ignored="false" />
+    <file path="/repair.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377261909357" ignored="false" />
+    <file path="/selfdriving.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377261914846" ignored="false" />
+    <file path="/advice.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1376989547609" ignored="false" />
+    <file path="/CountDiscussPostReply.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377249079192" ignored="false" />
+    <file path="/MemLogSaveTask.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377182422861" ignored="false" />
+    <file path="/MemLogSave.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377182667188" ignored="false" />
+    <file path="/MemLogTask.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377249209864" ignored="false" />
+    <file path="/UsersTop20.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377240757408" ignored="false" />
+    <file path="/top_users20.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377240910630" ignored="false" />
+    <file path="/PicTop5.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377241731220" ignored="false" />
+    <file path="/top_pic5.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377242066271" ignored="false" />
+    <file path="/IndexNews.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377245607785" ignored="false" />
+    <file path="/index_news.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377785414593" ignored="false" />
+    <file path="/CheckTimeQian.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377245811808" ignored="false" />
+    <file path="/index_discuss.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377784975270" ignored="false" />
+    <file path="/IndexDiscuss.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377247392030" ignored="false" />
+    <file path="/ClickTask.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377260250524" ignored="false" />
+    <file path="/ReplyTask.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377260473241" ignored="false" />
+    <file path="/ClickReplySave.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377261603034" ignored="false" />
+    <file path="/HotNews.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377434880870" ignored="false" />
+    <file path="/hotnews.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377435374154" ignored="false" />
+    <file path="/AuthTxInterceptor.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377506717812" ignored="false" />
+    <file path="/TFollow.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377506909223" ignored="false" />
+    <file path="/TDtComments.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377764236415" ignored="false" />
+    <file path="/getcar.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377862771110" ignored="false" />
+    <file path="/TCarPz.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377853810731" ignored="false" />
+    <file path="/TUserCar.java" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377913455016" ignored="false" />
+    <file path="/member.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377928439662" ignored="false" />
+    <file path="/memberview.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377919754529" ignored="false" />
+    <file path="/index_center_top.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377928596960" ignored="false" />
+    <file path="/index_right.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377931535738" ignored="false" />
+    <file path="/index_left.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377931181250" ignored="false" />
+    <file path="/car.ftl" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377935024490" ignored="false" />
+    <file path="/hotnews.html" changelist="d4c6889d-345d-4db1-a05c-302f6d482001" time="1377937703300" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,6 +269,7 @@
     <sortChildren value="false" />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
@@ -155,7 +307,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -165,19 +316,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.ftl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/ftl/news/index.ftl">
+      <file leaf-file-name="hotnews.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/ftl/static/hotnews.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="169" column="0" selection-start="8117" selection-end="8117" vertical-scroll-proportion="0.0">
+            <state line="13" column="0" selection-start="672" selection-end="672" vertical-scroll-proportion="-5.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewsController.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/hux/vvownerclub/controller/NewsController.java">
+      <file leaf-file-name="hotnews.ftl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/ftl/news/hotnews.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="35" selection-start="1277" selection-end="1283" vertical-scroll-proportion="0.49127907">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HotNews.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hux/vvownerclub/service/job/staticpage/HotNews.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="40" selection-start="746" selection-end="997" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="top.ftl" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/ftl/common/top.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="36" selection-start="424" selection-end="424" vertical-scroll-proportion="-5.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="job.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/job.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="58" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsersTop20.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/hux/vvownerclub/service/job/staticpage/UsersTop20.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="38" selection-start="811" selection-end="1055" vertical-scroll-proportion="0.5641593">
               <folding />
             </state>
           </provider>
@@ -190,6 +377,9 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GitLogSettings">
     <option name="myStructureFilterPaths" />
     <option name="myDateState">
@@ -199,22 +389,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/web/WEB-INF/ftl/admin/releases.ftl" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/ftl/admin/manage/review.ftl" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/ftl/admin/manage/review.js" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/ftl/admin/releaseNew.js" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/ftl/admin/manage/member.ftl" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/ftl/u/index_center_top.ftl" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/ftl/u/index.ftl" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/ftl/u/index_discuss.ftl" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/ftl/u/index_news.ftl" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/ftl/u/index_left.ftl" />
+        <option value="$PROJECT_DIR$/web/assets/akf/style.css" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/ftl/u/index_right.ftl" />
         <option value="$PROJECT_DIR$/web/WEB-INF/ftl/admin/left.ftl" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/ftl/common/top.ftl" />
-        <option value="$PROJECT_DIR$/src/com/hux/vvownerclub/controller/DongtanController.java" />
+        <option value="$PROJECT_DIR$/src/com/hux/vvownerclub/controller/MemberController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/ftl/admin/car.ftl" />
         <option value="$PROJECT_DIR$/src/com/hux/vvownerclub/controller/AdminController.java" />
-        <option value="$PROJECT_DIR$/src/com/hux/frame/util/ContantsUtil.java" />
-        <option value="$PROJECT_DIR$/src/com/hux/frame/core/interceptor/FreemarkerInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/com/hux/frame/freemarker/DirectiveUtils.java" />
-        <option value="$PROJECT_DIR$/src/com/hux/frame/freemarker/directive/PaginationDirective.java" />
-        <option value="$PROJECT_DIR$/src/com/hux/vvownerclub/StartConfig.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/ftl/common/paginate.ftl" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/ftl/news/index.ftl" />
-        <option value="$PROJECT_DIR$/src/com/hux/vvownerclub/controller/NewsController.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/ftl/admin/releaseNew.js" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/ftl/admin/releaseMod.js" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/ftl/static/hotnews.html" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/ftl/common/top.ftl" />
       </list>
     </option>
   </component>
@@ -236,7 +426,7 @@
     <OptionsSetting value="true" id="Edit" />
     <OptionsSetting value="true" id="Undo Check Out" />
     <OptionsSetting value="true" id="Get Latest Version" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -273,338 +463,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="volvoownerclub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="volvoownerclub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="volvoownerclub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="volvoownerclub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ftl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="volvoownerclub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="volvoownerclub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ftl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="news" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="volvoownerclub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="volvoownerclub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ftl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="volvoownerclub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="volvoownerclub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="volvoownerclub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="volvoownerclub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="volvoownerclub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="volvoownerclub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hux" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vvownerclub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="volvoownerclub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="volvoownerclub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hux" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vvownerclub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="volvoownerclub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="volvoownerclub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hux" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="volvoownerclub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="volvoownerclub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hux" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="freemarker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="volvoownerclub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="volvoownerclub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hux" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="freemarker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="directive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="volvoownerclub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="volvoownerclub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hux" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="volvoownerclub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="volvoownerclub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hux" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interceptor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="volvoownerclub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="volvoownerclub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hux" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -613,10 +475,10 @@
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.lastSelected" value="settings.github" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/configcenter/lib/sqljdbc4.jar" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -634,41 +496,21 @@
       <recent name="com.hux.frame.freemarker" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\xiang\IdeaProjects\volvoownerclub\doc" />
-      <recent name="C:\Users\xiang\IdeaProjects\volvoownerclub\lib" />
-      <recent name="C:\Users\xiang\IdeaProjects\volvoownerclub\web\assets\kindeditor" />
-      <recent name="C:\Users\xiang\IdeaProjects\volvoownerclub\web\assets\jcrop" />
-      <recent name="C:\Users\xiang\IdeaProjects\volvoownerclub\src\com\hux\frame\core\interceptor" />
+      <recent name="C:\Users\xiang\Documents\GitHub\volvoownerclub\web\assets\img" />
+      <recent name="C:\Users\xiang\Documents\GitHub\volvoownerclub\web\WEB-INF\ftl\discuss" />
+      <recent name="C:\Users\xiang\Documents\GitHub\volvoownerclub\src\com\jfinal\ext\plugin\cron" />
+      <recent name="C:\Users\xiang\Documents\GitHub\volvoownerclub\src" />
+      <recent name="C:\Users\xiang\Documents\GitHub\volvoownerclub\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\xiang\Documents\GitHub\volvoownerclub\web\WEB-INF\ftl" />
+      <recent name="C:\Users\xiang\Documents\GitHub\volvoownerclub\web\WEB-INF\ftl\static" />
       <recent name="C:\Users\xiang\IdeaProjects\volvoownerclub\web\WEB-INF\ftl\news" />
       <recent name="C:\Users\xiang\IdeaProjects\volvoownerclub\web\WEB-INF\ftl\member" />
       <recent name="C:\Users\xiang\IdeaProjects\volvoownerclub\web\assets\akf" />
     </key>
   </component>
   <component name="RunManager" selected="Application.JFinal">
-    <configuration default="false" name="TripleDes" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.hux.frame.util.encrypt.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.hux.frame.util.encrypt.TripleDes" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="volvoownerclub" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="DateUtil" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -705,6 +547,72 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.hux.vvownerclub.util.SystemCodes" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="volvoownerclub" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="WebUtils" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.hux.frame.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.hux.frame.util.WebUtils" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="volvoownerclub" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="UsersTop20" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.hux.vvownerclub.service.job.staticpage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.hux.vvownerclub.service.job.staticpage.UsersTop20" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="volvoownerclub" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="MemberController" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.hux.vvownerclub.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.hux.vvownerclub.controller.MemberController" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -850,17 +758,21 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="4">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.JFinal" />
-      <item index="1" class="java.lang.String" itemvalue="Application.TripleDes" />
-      <item index="2" class="java.lang.String" itemvalue="Application.DateUtil" />
-      <item index="3" class="java.lang.String" itemvalue="Application.SystemCodes" />
+      <item index="1" class="java.lang.String" itemvalue="Application.DateUtil" />
+      <item index="2" class="java.lang.String" itemvalue="Application.SystemCodes" />
+      <item index="3" class="java.lang.String" itemvalue="Application.WebUtils" />
+      <item index="4" class="java.lang.String" itemvalue="Application.UsersTop20" />
+      <item index="5" class="java.lang.String" itemvalue="Application.MemberController" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.SystemCodes" />
-        <item index="1" class="java.lang.String" itemvalue="Application.DateUtil" />
-        <item index="2" class="java.lang.String" itemvalue="Application.TripleDes" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.MemberController" />
+        <item index="1" class="java.lang.String" itemvalue="Application.UsersTop20" />
+        <item index="2" class="java.lang.String" itemvalue="Application.WebUtils" />
+        <item index="3" class="java.lang.String" itemvalue="Application.DateUtil" />
+        <item index="4" class="java.lang.String" itemvalue="Application.SystemCodes" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -916,9 +828,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22238164" sideWeight="0.6703911" order="3" side_tool="false" content_ui="tabs" />
@@ -929,21 +841,22 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.35335195" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.6452514" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3547486" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.6703911" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35335195" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32681563" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1012,90 +925,116 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/ftl/admin/releaseNew.js">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/ftl/admin/manage/member.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="30" selection-start="3552" selection-end="3555" vertical-scroll-proportion="0.6666667" />
+        <state line="41" column="33" selection-start="0" selection-end="2613" vertical-scroll-proportion="0.29819277">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hux/vvownerclub/service/DongtanService.java">
+    <entry file="file://$PROJECT_DIR$/src/com/hux/vvownerclub/controller/MemberController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="18" selection-start="250" selection-end="250" vertical-scroll-proportion="0.4979253" />
+        <state line="94" column="16" selection-start="3188" selection-end="3651" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hux/vvownerclub/controller/DongtanController.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/ftl/admin/chpwd.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="47" selection-start="1770" selection-end="1770" vertical-scroll-proportion="0.78197676" />
+        <state line="33" column="12" selection-start="1244" selection-end="1337" vertical-scroll-proportion="0.67771083">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hux/vvownerclub/service/impl/DongtanServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/ftl/admin/left.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="157" selection-start="678" selection-end="806" vertical-scroll-proportion="0.44444445" />
+        <state line="22" column="70" selection-start="1309" selection-end="1309" vertical-scroll-proportion="0.05109489">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/ftl/admin/manage/reviewnews.ftl">
+    <entry file="file://$PROJECT_DIR$/web/assets/akf/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="15.0" />
+        <state line="588" column="46" selection-start="9303" selection-end="9303" vertical-scroll-proportion="-10.075582">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/ftl/u/register.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="135" column="86" selection-start="6809" selection-end="6820" vertical-scroll-proportion="-18.916666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/ftl/admin/car.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="35" selection-start="3653" selection-end="3653" vertical-scroll-proportion="-10.791667">
+          <folding>
+            <element signature="n#style#0;n#th#2;n#tr#0;n#thead#0;n#table#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hux/vvownerclub/controller/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="306" column="40" selection-start="9712" selection-end="9712" vertical-scroll-proportion="-2.1518404" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/JFinal-bin-1.4.jar!/com/jfinal/plugin/activerecord/Model.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="46" selection-start="2094" selection-end="2098" vertical-scroll-proportion="0.34615386" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/ftl/news/detail.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hux/frame/util/ContantsUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="25" selection-start="91" selection-end="103" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hux/frame/core/interceptor/FreemarkerInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="30" selection-start="716" selection-end="727" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hux/frame/freemarker/DirectiveUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="36" selection-start="307" selection-end="321" vertical-scroll-proportion="0.3649635" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/ftl/common/paginate.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="33" selection-start="682" selection-end="682" vertical-scroll-proportion="-13.916667" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/ftl/news/index.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="169" column="0" selection-start="8117" selection-end="8117" vertical-scroll-proportion="0.0">
+        <state line="594" column="53" selection-start="19452" selection-end="19452" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hux/frame/freemarker/directive/PaginationDirective.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/ftl/admin/releaseNew.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="54" selection-start="950" selection-end="950" vertical-scroll-proportion="0.37063953">
+        <state line="18" column="41" selection-start="696" selection-end="705" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hux/vvownerclub/StartConfig.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/ftl/admin/releaseMod.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="29" selection-start="3111" selection-end="3111" vertical-scroll-proportion="0.52034885">
+        <state line="16" column="50" selection-start="678" selection-end="678" vertical-scroll-proportion="0.35555556">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hux/vvownerclub/controller/NewsController.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/ftl/static/hotnews.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="35" selection-start="1277" selection-end="1283" vertical-scroll-proportion="0.49127907">
+        <state line="13" column="0" selection-start="672" selection-end="672" vertical-scroll-proportion="-5.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/ftl/news/hotnews.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hux/vvownerclub/service/job/staticpage/HotNews.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="40" selection-start="746" selection-end="997" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/ftl/common/top.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="36" selection-start="424" selection-end="424" vertical-scroll-proportion="-5.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/job.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="58" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hux/vvownerclub/service/job/staticpage/UsersTop20.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="38" selection-start="811" selection-end="1055" vertical-scroll-proportion="0.5641593">
           <folding />
         </state>
       </provider>

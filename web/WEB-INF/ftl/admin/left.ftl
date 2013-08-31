@@ -2,7 +2,7 @@
     <a title="返回我的空间首页" class="u" href="${_BASE_PATH}/u/${_sessionob.getStr("url")}">
         <img align="absmiddle" user="${_sessionob.getInt("id")}" class="SmallPortrait"
              title="${_sessionob.getStr("name")}" alt="${_sessionob.getStr("name")}"
-             src="${_BASE_PATH}/${_getUserPicUrl(_sessionob.getStr("pic")!)}">
+             src="${_BASE_PATH}${_getUserPicUrl(_sessionob.getStr("pic")!)}">
     </a>
     <a title="返回空间管理首页" class="h" href="${_BASE_PATH}/admin/${_sessionob.getStr("name")}">空间管理</a>
 </div>
@@ -20,6 +20,7 @@
                 <li rel="portrait"><a href="${_BASE_PATH}/admin/portrait">更改头像图片</a></li>
                 <li rel="userSettings"><a href="${_BASE_PATH}/admin/userSettings">空间个性化设置</a></li>
                 <li rel="changeEmail"><a href="${_BASE_PATH}/admin/changEmail">修改登录邮箱</a></li>
+                <li rel="car"><a href="${_BASE_PATH}/admin/car">车型信息维护</a></li>
             </ol>
         </li>
     </ul>

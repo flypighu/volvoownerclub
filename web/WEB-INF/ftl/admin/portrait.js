@@ -28,10 +28,9 @@ $(function () {
                                 $this.text("上传图片，请稍候。。。");
                                 $this.attr("disabled", false);
                             } else {
-                                $("#uploaddiv").hide();
                                 $("#uploadimg").attr("width", data.w);
                                 $("#uploadimg").attr("height", data.h);
-                                $("#uploadimg").attr("src", "${_BASE_PATH}" + data.msg);
+                                $("#uploadimg").attr("src", "${_BASE_PATH}" + data.url);
                                 $("#uploadimg").show();
                                 $("#img_fn").val(data.fn);
                                 $('#uploadimg').ready(function(){

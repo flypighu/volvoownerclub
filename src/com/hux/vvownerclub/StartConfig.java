@@ -5,10 +5,13 @@ import com.hux.frame.core.controller.StaticController;
 import com.hux.frame.core.handler.CommonAttrHandler;
 import com.hux.frame.core.interceptor.ExceptionInterceptor;
 import com.hux.frame.core.interceptor.FreemarkerInterceptor;
+import com.hux.frame.util.SpringContextUtil;
 import com.hux.vvownerclub.controller.*;
 import com.hux.vvownerclub.dbmodel.*;
+import com.hux.vvownerclub.service.job.staticpage.*;
 import com.hux.vvownerclub.util.codes.SystemCodesManage;
 import com.jfinal.config.*;
+import com.jfinal.ext.plugin.cron.Cron4jPlugin;
 import com.jfinal.log.Logger;
 import com.jfinal.plugin.activerecord.ActiveRecordPlugin;
 import com.jfinal.plugin.activerecord.Db;
@@ -16,6 +19,8 @@ import com.jfinal.plugin.activerecord.dialect.AnsiSqlDialect;
 import com.jfinal.plugin.c3p0.C3p0Plugin;
 import com.jfinal.plugin.spring.IocInterceptor;
 import com.jfinal.plugin.spring.SpringPlugin;
+import com.jfinal.render.FreeMarkerRender;
+import org.springframework.core.task.TaskExecutor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,7 +37,8 @@ public class StartConfig extends JFinalConfig {
 
     @Override
     public void configConstant(Constants constants) {
-        constants.setDevMode(true);
+        loadPropertyFile("app_config.txt");
+        constants.setDevMode(getPropertyToBoolean("devMode"));
         constants.setBaseViewPath("/WEB-INF/ftl/");
     }
 
@@ -45,11 +51,12 @@ public class StartConfig extends JFinalConfig {
         routes.add("/dongtan", DongtanController.class, "/");
         routes.add("/admin", AdminController.class, "/");
         routes.add("/news", NewsController.class, "/");
+        routes.add("/discuss", DiscussController.class, "/");
     }
 
     @Override
     public void configPlugin(Plugins plugins) {
-        loadPropertyFile("app_config.txt");
+
         plugins.add(new SpringPlugin());
         C3p0Plugin c3p0Plugin = new C3p0Plugin(getProperty("jdbcUrl"), getProperty("user"), getProperty("password"), getProperty("driverClass"));
         plugins.add(c3p0Plugin);
@@ -64,12 +71,19 @@ public class StartConfig extends JFinalConfig {
         arp.addMapping("T_USER", TUser.class);
         arp.addMapping("T_NEWS", TNews.class);
         arp.addMapping("T_MOVE", TMove.class);
-        arp.addMapping("T_COMMENTS", TComments.class);
-        arp.addMapping("T_DISCUSS", TDiscuss.class);
+        arp.addMapping("T_NEWS_COMMENTS", TNewsComments.class);
         arp.addMapping("T_DISCUSS_POST", TDiscussPost.class);
+        arp.addMapping("T_DISCUSS_COMMENTS", TDiscussComments.class);
         arp.addMapping("T_CAR", TCar.class);
+        arp.addMapping("T_CAR_PZ", TCarPz.class);
         arp.addMapping("T_CODE", TCode.class);
+        arp.addMapping("T_FOLLOW", TFollow.class);
+        arp.addMapping("T_DT_COMMENTS", TDtComments.class);
+        arp.addMapping("T_USER_CAR", TUserCar.class);
 
+        //定时任务
+        Cron4jPlugin cron4j = new Cron4jPlugin();
+        plugins.add(cron4j);
     }
 
     @Override
@@ -89,13 +103,22 @@ public class StartConfig extends JFinalConfig {
         super.afterJFinalStart();
         SystemCodesManage.initCodes();
 
-        //测试2000条新闻
+        //测试2000条帖子
 //        List<String> sqlist = new ArrayList<String>();
 //        for (int i = 0; i < 2000; i++) {
-//            sqlist.add("insert into t_news(title,content,sim_content,sim_pic,is_index,relman,reltime,status) " +
-//                    "values ('test"+i+"','test','test"+i+"','<img src=\"http://localhost:8080/upload/releases/2013/0806/1375795123115_1.jpg\" alt=\"\" />','N',1,sysdate(),'0502')");
+//            sqlist.add("insert into t_discuss_post(disid,title,user,rtime,content,reply,click) " +
+//                    "values (1,'test"+i+"',1,sysdate(),'test',0,0)");
 //        }
-//        Db.batch(sqlist,100);
+//        Db.batch(sqlist, 100);
+
+        //生成所有静态界面
+        TaskExecutor taskExecutor = (TaskExecutor) SpringContextUtil.getBean("taskExecutor");
+        taskExecutor.execute(new NewsTopComment20());
+        taskExecutor.execute(new UsersTop20());
+        taskExecutor.execute(new PicTop5());
+        taskExecutor.execute(new IndexNews());
+        taskExecutor.execute(new IndexDiscuss());
+        taskExecutor.execute(new HotNews());
     }
 
     @Override

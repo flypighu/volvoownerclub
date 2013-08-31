@@ -33,8 +33,8 @@
             <div id="msg"></div>
             <p>
                 <button class="btn btn-primary" id="pass">审核通过</button>
-                <button class="btn" id="back">审核退回</button>
-                <a href="javascript:history.go(-1);" class="btn btn-inverse">返回</a>
+                <button class="btn btn-inverse" id="back">审核退回</button>
+                <a href="javascript:history.go(-1);" class="btn">返回</a>
             </p>
             <div class="detail">
                 <div class="page-header">
@@ -48,6 +48,16 @@
                     ${news.get("content")}
                     </p>
                 </div>
+
+            <#if news.is_index == "Y">
+                <hr>
+                <p>
+                    图片摘要信息：${news.indexs}
+                </p>
+
+                <p><img src="${news.indexpic}"></p>
+            </#if>
+
             <#if news.get("source")?exists>
                 <blockquote>
                     <p>本文转载自: ${news.get("source")}</p>
