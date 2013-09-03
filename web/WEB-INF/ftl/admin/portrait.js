@@ -30,7 +30,7 @@ $(function () {
                             } else {
                                 $("#uploadimg").attr("width", data.w);
                                 $("#uploadimg").attr("height", data.h);
-                                $("#uploadimg").attr("src", "${_BASE_PATH}" + data.url);
+                                $("#uploadimg").attr("src", "${_BASE_PATH}" + data.msg);
                                 $("#uploadimg").show();
                                 $("#img_fn").val(data.fn);
                                 $('#uploadimg').ready(function(){

@@ -253,15 +253,12 @@ CREATE TABLE T_NEWS
   CONTENT              LONGTEXT NOT NULL,
   SIM_CONTENT          VARCHAR(100) NOT NULL,
   SIM_PIC              VARCHAR(100),
-  IS_INDEX             CHAR(1) NOT NULL COMMENT '是：Y
-            否：N',
+  IS_INDEX             CHAR(1) NOT NULL COMMENT '是：Y否：N',
   INDEXPIC             VARCHAR(100),
   INDEXS               VARCHAR(100),
   RELMAN               INT NOT NULL,
   RELTIME              DATETIME NOT NULL,
-  STATUS               CHAR(4) NOT NULL COMMENT '0501 未审核
-            0502 已审核
-            0503 已删除',
+  STATUS               CHAR(4) NOT NULL COMMENT '0501 未审核0502 已审核0503 已删除',
   REVIEWMAN            INT,
   REVIEWTIME           DATETIME,
   BACKMAN              INT,
@@ -320,9 +317,7 @@ CREATE TABLE T_USER
   LOGIN_EMAIL          VARCHAR(20) NOT NULL COMMENT '唯一',
   NAME                 VARCHAR(20) COMMENT '唯一',
   PASSWORD             VARCHAR(50) NOT NULL,
-  GENDER               CHAR(4) NOT NULL COMMENT '代码：
-            0101：男
-            0102：女',
+  GENDER               CHAR(4) NOT NULL COMMENT '代码：0101：男0102：女',
   PROVINCE             VARCHAR(10) NOT NULL,
   CITY                 VARCHAR(10) NOT NULL,
   URL                  VARCHAR(10),

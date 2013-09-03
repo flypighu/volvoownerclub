@@ -14,6 +14,7 @@ import com.hux.vvownerclub.service.job.staticpage.*;
 import com.hux.vvownerclub.util.codes.SystemCodesManage;
 import com.jfinal.config.*;
 import com.jfinal.ext.plugin.cron.Cron4jPlugin;
+import com.jfinal.kit.PathKit;
 import com.jfinal.log.Logger;
 import com.jfinal.plugin.activerecord.ActiveRecordPlugin;
 import com.jfinal.plugin.activerecord.Db;
@@ -22,6 +23,7 @@ import com.jfinal.plugin.c3p0.C3p0Plugin;
 import com.jfinal.plugin.spring.IocInterceptor;
 import com.jfinal.plugin.spring.SpringPlugin;
 import com.jfinal.render.FreeMarkerRender;
+import org.springframework.context.support.FileSystemXmlApplicationContext;
 import org.springframework.core.task.TaskExecutor;
 
 import java.util.ArrayList;
@@ -42,6 +44,14 @@ public class StartConfig extends JFinalConfig {
         loadPropertyFile("app_config.txt");
         constants.setDevMode(getPropertyToBoolean("devMode"));
         constants.setBaseViewPath("/WEB-INF/ftl/");
+
+        FreeMarkerRender.setProperty("template_update_delay", "0");//模板更更新时间,0表示每次都加载
+       // FreeMarkerRender.setProperty("classic_compatible", "true");//如果为null则转为空值,不需要再用!处理
+        FreeMarkerRender.setProperty("whitespace_stripping", "true");//去除首尾多余空格
+        FreeMarkerRender.setProperty("date_format", "yyyy-MM-dd");
+        FreeMarkerRender.setProperty("time_format", "HH:mm:ss");
+        FreeMarkerRender.setProperty("datetime_format", "yyyy-MM-dd HH:mm:ss");
+        FreeMarkerRender.setProperty("default_encoding", "UTF-8");
     }
 
     @Override
@@ -59,7 +69,7 @@ public class StartConfig extends JFinalConfig {
     @Override
     public void configPlugin(Plugins plugins) {
 
-        plugins.add(new SpringPlugin());
+        plugins.add(new SpringPlugin(new FileSystemXmlApplicationContext("file:" + PathKit.getWebRootPath() + "/WEB-INF/applicationContext.xml")));
         C3p0Plugin c3p0Plugin = new C3p0Plugin(getProperty("jdbcUrl"), getProperty("user"), getProperty("password"), getProperty("driverClass"));
         plugins.add(c3p0Plugin);
         ActiveRecordPlugin arp = new ActiveRecordPlugin(c3p0Plugin);

@@ -30,7 +30,7 @@
     </tr>
     <tr>
         <td>车标号：</td>
-        <td>${user.flag_no}</td>
+        <td>${user.flag_no!""}</td>
     </tr>
     <tr>
         <td>车型：</td>

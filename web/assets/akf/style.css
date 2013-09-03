@@ -877,7 +877,8 @@ body {
     padding-left: 45px;
 }
 
-#myCarousel div.item {
+#myCarousel div img {
+    width : 770px;
     height: 500px;
 }
 
